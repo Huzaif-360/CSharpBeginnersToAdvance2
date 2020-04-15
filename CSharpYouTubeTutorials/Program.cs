@@ -6,7 +6,11 @@ namespace CSharpYouTubeTutorials
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Csharp YouTube Tutorials");
+            Console.WriteLine("Csharp YouTube Tutorials 1");
+        }
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Csharp YouTube Tutorials 2 ");
         }
     }
 }
