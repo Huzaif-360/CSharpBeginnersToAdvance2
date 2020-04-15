@@ -1,25 +1,31 @@
 ﻿using System;
 
-namespace Classes
+namespace Arrays
 {
-    public class Person
-    {
-        public string fName;
-        public string lName;
-        public void Introduce()
-        {
-            Console.WriteLine("my name is " + fName + " " + lName);
-        }
-
-    }
     class Program
     {
         static void Main(string[] args)
         {
-            Person person = new Person();  //var= Person
-            person.fName = "Huzaifa";
-            person.lName = "Shah";
-            person.Introduce();
+            int[] number = new int[3];
+            number[0] = 1;
+            Console.WriteLine(number[0]);
+            Console.WriteLine(number[1]);
+            Console.WriteLine(number[2]);
+            Console.WriteLine("...............................");
+            //.................................................................
+            var check = new bool[3];
+            check[0] = true;
+            Console.WriteLine(check[0]);
+            Console.WriteLine(check[1]);
+            Console.WriteLine(check[2]);
+            Console.WriteLine("...............................");
+            //.................................................................
+            var names = new string[3] { "Huzaifa", "Nouman", "Saad" };
+            //names[0] = "Huzaifa";
+            Console.WriteLine(names[0]);
+            Console.WriteLine(names[1]);
+            Console.WriteLine(names[2]);
+            Console.WriteLine("...............................");
         }
     }
 }
