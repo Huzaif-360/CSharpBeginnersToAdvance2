@@ -1,0 +1,13 @@
+C:\Users\Saifia computers\source\repos\CSharpBeginnersToAdvance2\CSharpBeginners\bin\Debug\netcoreapp3.1\CSharpBeginners.exe
+C:\Users\Saifia computers\source\repos\CSharpBeginnersToAdvance2\CSharpBeginners\bin\Debug\netcoreapp3.1\CSharpBeginners.deps.json
+C:\Users\Saifia computers\source\repos\CSharpBeginnersToAdvance2\CSharpBeginners\bin\Debug\netcoreapp3.1\CSharpBeginners.runtimeconfig.json
+C:\Users\Saifia computers\source\repos\CSharpBeginnersToAdvance2\CSharpBeginners\bin\Debug\netcoreapp3.1\CSharpBeginners.runtimeconfig.dev.json
+C:\Users\Saifia computers\source\repos\CSharpBeginnersToAdvance2\CSharpBeginners\bin\Debug\netcoreapp3.1\CSharpBeginners.dll
+C:\Users\Saifia computers\source\repos\CSharpBeginnersToAdvance2\CSharpBeginners\bin\Debug\netcoreapp3.1\CSharpBeginners.pdb
+C:\Users\Saifia computers\source\repos\CSharpBeginnersToAdvance2\CSharpBeginners\obj\Debug\netcoreapp3.1\CSharpBeginners.csprojAssemblyReference.cache
+C:\Users\Saifia computers\source\repos\CSharpBeginnersToAdvance2\CSharpBeginners\obj\Debug\netcoreapp3.1\CSharpBeginners.csproj.CoreCompileInputs.cache
+C:\Users\Saifia computers\source\repos\CSharpBeginnersToAdvance2\CSharpBeginners\obj\Debug\netcoreapp3.1\CSharpBeginners.AssemblyInfoInputs.cache
+C:\Users\Saifia computers\source\repos\CSharpBeginnersToAdvance2\CSharpBeginners\obj\Debug\netcoreapp3.1\CSharpBeginners.AssemblyInfo.cs
+C:\Users\Saifia computers\source\repos\CSharpBeginnersToAdvance2\CSharpBeginners\obj\Debug\netcoreapp3.1\CSharpBeginners.dll
+C:\Users\Saifia computers\source\repos\CSharpBeginnersToAdvance2\CSharpBeginners\obj\Debug\netcoreapp3.1\CSharpBeginners.pdb
+C:\Users\Saifia computers\source\repos\CSharpBeginnersToAdvance2\CSharpBeginners\obj\Debug\netcoreapp3.1\CSharpBeginners.genruntimeconfig.cache

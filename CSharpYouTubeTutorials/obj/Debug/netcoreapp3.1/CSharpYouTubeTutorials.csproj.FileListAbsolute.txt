@@ -1,0 +1,13 @@
+C:\Users\Saifia computers\source\repos\CSharpBeginnersToAdvance2\CSharpYouTubeTutorials\bin\Debug\netcoreapp3.1\CSharpYouTubeTutorials.exe
+C:\Users\Saifia computers\source\repos\CSharpBeginnersToAdvance2\CSharpYouTubeTutorials\bin\Debug\netcoreapp3.1\CSharpYouTubeTutorials.deps.json
+C:\Users\Saifia computers\source\repos\CSharpBeginnersToAdvance2\CSharpYouTubeTutorials\bin\Debug\netcoreapp3.1\CSharpYouTubeTutorials.runtimeconfig.json
+C:\Users\Saifia computers\source\repos\CSharpBeginnersToAdvance2\CSharpYouTubeTutorials\bin\Debug\netcoreapp3.1\CSharpYouTubeTutorials.runtimeconfig.dev.json
+C:\Users\Saifia computers\source\repos\CSharpBeginnersToAdvance2\CSharpYouTubeTutorials\bin\Debug\netcoreapp3.1\CSharpYouTubeTutorials.dll
+C:\Users\Saifia computers\source\repos\CSharpBeginnersToAdvance2\CSharpYouTubeTutorials\bin\Debug\netcoreapp3.1\CSharpYouTubeTutorials.pdb
+C:\Users\Saifia computers\source\repos\CSharpBeginnersToAdvance2\CSharpYouTubeTutorials\obj\Debug\netcoreapp3.1\CSharpYouTubeTutorials.csprojAssemblyReference.cache
+C:\Users\Saifia computers\source\repos\CSharpBeginnersToAdvance2\CSharpYouTubeTutorials\obj\Debug\netcoreapp3.1\CSharpYouTubeTutorials.csproj.CoreCompileInputs.cache
+C:\Users\Saifia computers\source\repos\CSharpBeginnersToAdvance2\CSharpYouTubeTutorials\obj\Debug\netcoreapp3.1\CSharpYouTubeTutorials.AssemblyInfoInputs.cache
+C:\Users\Saifia computers\source\repos\CSharpBeginnersToAdvance2\CSharpYouTubeTutorials\obj\Debug\netcoreapp3.1\CSharpYouTubeTutorials.AssemblyInfo.cs
+C:\Users\Saifia computers\source\repos\CSharpBeginnersToAdvance2\CSharpYouTubeTutorials\obj\Debug\netcoreapp3.1\CSharpYouTubeTutorials.dll
+C:\Users\Saifia computers\source\repos\CSharpBeginnersToAdvance2\CSharpYouTubeTutorials\obj\Debug\netcoreapp3.1\CSharpYouTubeTutorials.pdb
+C:\Users\Saifia computers\source\repos\CSharpBeginnersToAdvance2\CSharpYouTubeTutorials\obj\Debug\netcoreapp3.1\CSharpYouTubeTutorials.genruntimeconfig.cache
