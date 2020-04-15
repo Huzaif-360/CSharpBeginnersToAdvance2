@@ -6,24 +6,21 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-            /*Console.WriteLine("Hello World!");
+            Console.WriteLine("Hello World!");
+            //clear console
             Console.Clear();
+
+
             Console.WriteLine("Hello World 2!");
+            // Beep sound
             Console.Beep();
-            Console.Beep();
-            Console.Beep();
-            Console.Beep();
-            Console.Beep();
-            Console.Beep();
-            Console.Beep();
-            Console.Beep();
-            */
+         
             var number = 1;
             var count = 3;
-            var hj = 2.11f;
+            var  fnum= 2.11f;
 
             Console.WriteLine(number);
-            Console.WriteLine(hj);
+            Console.WriteLine(fnum);
 
         }
     }
