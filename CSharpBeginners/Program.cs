@@ -28,7 +28,7 @@ namespace Type_Conversion
             /* var number = "1234";
              var bbb= Convert.ToByte(number);
              Console.WriteLine(bbb);
-             */
+             
 
             //.................................................................
             //Try catch
@@ -42,7 +42,21 @@ namespace Type_Conversion
             {
                 Console.WriteLine("This conversion can not be done due to less space in byte!!!");
 
-            }
+            }*/
+
+            //.................................................................
+
+            //....................... OPERATORS ..............................
+            var z = 1;
+            var y = 2;
+            Console.WriteLine("a+b = " + z + y);
+            Console.WriteLine("a/b = " + z / y);
+            Console.WriteLine("a/b = " + (float)z / (float)y);
+            Console.WriteLine("a>b = " + (z > y));
+            Console.WriteLine("a==b = " + (z == y));
+            Console.WriteLine("a<b = " + (z < y));
+
+
 
 
         }
