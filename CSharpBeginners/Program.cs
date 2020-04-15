@@ -15,16 +15,36 @@ namespace Type_Conversion
             // Explicit Converesion
             int c = 256;
             byte d = (byte)c;
-            Console.WriteLine(d);*/
+            Console.WriteLine(d);
             //.................................................................
 
             // Non- Compatible conversitons.
             var s = "1234";
             var j = Convert.ToInt32(s);
-            Console.WriteLine(j);
-            //.................................................................
+            Console.WriteLine(j); */
 
-            
+            //.................................................................
+            // Exception Handling
+            /* var number = "1234";
+             var bbb= Convert.ToByte(number);
+             Console.WriteLine(bbb);
+             */
+
+            //.................................................................
+            //Try catch
+            try
+            {
+                var number = "1234";
+                var bbb = Convert.ToByte(number);
+                Console.WriteLine(bbb);
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("This conversion can not be done due to less space in byte!!!");
+
+            }
+
+
         }
     }
 }
