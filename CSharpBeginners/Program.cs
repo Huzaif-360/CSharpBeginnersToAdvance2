@@ -6,10 +6,18 @@ namespace Type_Conversion
     {
         static void Main(string[] args)
         {
-            // Implicit Conversion
+            /* Implicit Conversion
             byte b = 1;
             int i = b;
-            Console.WriteLine(i);
+            Console.WriteLine(i);*/
+            //.................................................................
+            
+            // Explicit Converesion
+            int c = 256;
+            byte d = (byte)c;
+            Console.WriteLine(d);
+           
+
 
         }
     }
