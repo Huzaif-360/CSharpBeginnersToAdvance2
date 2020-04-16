@@ -26,3 +26,15 @@ Main method is the entry point of the application.
 3. Floating Types – float and double
 4. Decimal Types 
 
+//Lecture 4
+A string with an @ symbol prefix, as in "\“Hello"\” is Verbatim Literal.
+ @"\C:\Program\User\CSharpcourse";
+Verbatim literals make escape sequences translate as normal printable characters to enhance readability.
+
+
+//Lecture 5
+Assignment Operator =
+Arithmetic Operators like +,-,*,/,% 
+Comparison Operators like ==, !=,>, >=, <, <= 
+Conditional Operators like &&, ||
+Ternary Operator, simplfies 10 lines code for a simple condition in just 3 lines
