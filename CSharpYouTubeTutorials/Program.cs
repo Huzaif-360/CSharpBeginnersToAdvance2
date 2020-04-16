@@ -7,19 +7,32 @@ namespace CSharpYouTubeTutorials
         static void Main()
         {
 
-            //UT Lecture 3
-            bool b = true;
-            // MAX and MIN values
-            int i;
-            Console.WriteLine("Min range {0}", int.MaxValue);
-            Console.WriteLine("Min range {0}", int.MinValue);
+            //UT Lecture 4
+            string name = "huzaifa";
+            Console.WriteLine(name);
 
-
+        //......................................
+         
+            var Quote =  "\"Union is strength\"";
+            Console.WriteLine(Quote);
             //......................................
-            double d = 123.1234567;
-            Console.WriteLine(d);
 
-           
+            var line = "One\nTwo\nThree";
+            Console.WriteLine(line);
+
+
+            //.....................Without @.......................
+            var directory1 = "\\C:\\Program\\User\\CSharpcourse";
+            Console.WriteLine(directory1);
+
+            //.....................With @.......................
+            var directory2 = @"\C:\Program\User\CSharpcourse";
+            Console.WriteLine(directory2);
+
+
+
+
+
 
 
 

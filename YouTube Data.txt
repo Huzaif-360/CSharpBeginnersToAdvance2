@@ -25,3 +25,4 @@ Main method is the entry point of the application.
 2. Integral Types - sbyte, byte, short, ushort, int, uint, long, ulong, char
 3. Floating Types – float and double
 4. Decimal Types 
+
