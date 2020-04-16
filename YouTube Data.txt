@@ -6,3 +6,14 @@ C# HelloWorld Program
 The namespace declaration, using System, indicates that you are using the System namespace.
 A namespace is used to organize code 
 Main method is the entry point of the application.
+
+
+
+//Lecture 2
+//Read and Write from Console
+1. Reading from the console
+2. Writing to the console
+3. Two ways to write to console
+     a) Concatenation
+     b) Place holder syntax – Most preferred  
+4. C# is case senstive
