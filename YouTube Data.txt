@@ -1,0 +1,27 @@
+//Toutube Tutorials 
+// Lecture 1
+//Introduction 
+C# HelloWorld Program
+The namespace declaration, using System, indicates that you are using the System namespace.
+A namespace is used to organize code 
+Main method is the entry point of the application.
+
+
+
+//Lecture 2
+//Read and Write from Console
+1. Reading from the console
+2. Writing to the console
+3. Two ways to write to console
+     a) Concatenation
+     b) Place holder syntax – Most preferred  
+4. C# is case senstive
+
+
+
+//Lecture 3
+//Built-in types in C#
+1. Boolean type – Only true or false 
+2. Integral Types - sbyte, byte, short, ushort, int, uint, long, ulong, char
+3. Floating Types – float and double
+4. Decimal Types 
