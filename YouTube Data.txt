@@ -1,0 +1,8 @@
+//Toutube Tutorials 
+// Lecture 1
+//Introduction 
+
+C# HelloWorld Program
+The namespace declaration, using System, indicates that you are using the System namespace.
+A namespace is used to organize code 
+Main method is the entry point of the application.
