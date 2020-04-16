@@ -7,15 +7,12 @@ namespace Strings
         static void Main(string[] args)
         {
 
-            string name = "Huzaifa";
-            var lastName = "Shah";
-            //.................... Method 1 ............................................
-            var fullName1 = name + " " + lastName;                                  
-            Console.WriteLine(fullName1);
+            int number = 10;
 
-            //.................... Method 2 ............................................
-            var fullName2 = string.Format("{0} {1}  ", name, lastName);           
-            Console.WriteLine(fullName2);
+            // Ternary operator example
+            bool isNumber10 = number == 10 ? true : false;
+
+            Console.WriteLine("Number == 10 is {0}", isNumber10);
 
 
         }
