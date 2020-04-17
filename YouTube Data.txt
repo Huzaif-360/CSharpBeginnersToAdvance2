@@ -102,3 +102,19 @@ float f= 12.02f; (no error)
                 Console.WriteLine("Your string can not be converted into integer. Pleases reonsider it");
             }
             
+
+
+//Lecture 8
+//Arrays
+1. Arrays initialization
+2. Arrays Printing 
+      a) Simple printing using repeating Console.WriteLine 
+      b) using for Loop
+3. Advantages and Disadvantages of Arrays
+     Advantages:
+          Arrays are strongly typed.
+     Disadvantages:
+          Have fix size and type
+   
+
+
