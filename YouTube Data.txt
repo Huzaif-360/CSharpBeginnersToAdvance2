@@ -38,7 +38,9 @@ Assignment Operator =
 Arithmetic Operators like +,-,*,/,% 
 Comparison Operators like ==, !=,>, >=, <, <= 
 Conditional Operators like &&, ||
-Ternary Operator, simplfies 10 lines code for a simple condition in just 3 lines
+Ternary Operator , simplfies 10 lines code for a simple condition in just 3 lines
+e.g. int num = 100;
+bool inNumber= number ==98 ?true: false;
 
 
 //Lecture 6
@@ -59,7 +61,7 @@ bool no= false;
 enter your choice = ? (yes or no)
 //if user select no option this bool would be initialize as null so we always try to convert not nullable to nullable type using "?". And this is very benificient.
 
-Note:  Nullanle and Not Nullable conversion is EXPLICIT CONVERSION not IMPLICIT
+Note:  Nullable and Not Nullable conversion is EXPLICIT CONVERSION not IMPLICIT
 Without Coalescing Operator code was dense
 Using Coalescing Operator code shrinks to only 3 lines
             int? TicketsOnSale = null; //87;
