@@ -11,22 +11,12 @@ namespace CSharpYouTubeTutorials
 
             /*
              * Checking ticket Status
-             * Program without using NULL coalescing operator
+             * Program using NULL coalescing operator
+             * Only 3 Line code
              */
 
-            int Tickets;
             int? TicketsOnSale = null; //87;
-
-            if (TicketsOnSale == null)
-            {
-                Tickets = 0;
-            }
-            else
-            {
-                //(int)Exolicit conversion because of nullable & not nullable
-                Tickets = (int)TicketsOnSale;
-            }
-
+            int Tickets = TicketsOnSale ?? 0;
             Console.WriteLine("Available Tickets={0}", Tickets);
 
         }
