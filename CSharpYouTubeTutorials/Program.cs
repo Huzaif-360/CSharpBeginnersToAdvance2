@@ -9,29 +9,25 @@ namespace CSharpYouTubeTutorials
 
             //UT Lecture 6
 
-            /*Nullable bool
-            Now bool has 3 choices
-            1. True
-            2. False
-            3. Null*/
+            /*
+             * Checking ticket Status
+             * Program without using NULL coalescing operator
+             */
 
-            bool? your_Reply = null;
+            int Tickets;
+            int? TicketsOnSale = null; //87;
 
-            ///Console.WriteLine("Enter your choice");
-            //string your_Reply = Console.ReadLine();
-
-            if (your_Reply==true)
+            if (TicketsOnSale == null)
             {
-                Console.WriteLine("Your Choosed YES!");
-            }
-            else if(your_Reply==false)
-            {
-                Console.WriteLine("Your Choosed No!");
+                Tickets = 0;
             }
             else
             {
-                Console.WriteLine("You have made no choice");
+                //(int)Exolicit conversion because of nullable & not nullable
+                Tickets = (int)TicketsOnSale;
             }
+
+            Console.WriteLine("Available Tickets={0}", Tickets);
 
         }
 
