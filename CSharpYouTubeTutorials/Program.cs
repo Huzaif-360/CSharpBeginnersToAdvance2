@@ -9,17 +9,29 @@ namespace CSharpYouTubeTutorials
 
             //UT Lecture 6
 
-            //Types in C#
-            //................Nullable Type........We CAN initialize these valuse with NULL..............
-            string s = null;
+            /*Nullable bool
+            Now bool has 3 choices
+            1. True
+            2. False
+            3. Null*/
 
-            //.............. Not Nullable Type.....We CAN NOT initialize these valuse with NULL.............
-            int i = null;         //........(Throwing an error)..................
+            bool? your_Reply = null;
 
-        
-            
+            ///Console.WriteLine("Enter your choice");
+            //string your_Reply = Console.ReadLine();
 
-
+            if (your_Reply==true)
+            {
+                Console.WriteLine("Your Choosed YES!");
+            }
+            else if(your_Reply==false)
+            {
+                Console.WriteLine("Your Choosed No!");
+            }
+            else
+            {
+                Console.WriteLine("You have made no choice");
+            }
 
         }
 
