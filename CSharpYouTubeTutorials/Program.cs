@@ -7,28 +7,22 @@ namespace CSharpYouTubeTutorials
         static void Main()
         {
 
-            //UT Lecture 5
+            //UT Lecture 6
 
-            //.............. Without Ternary Operator .......................
-            /* int number = 98;
-             bool IsNumber;
-             if (number == 98)
-             {
-                 IsNumber = true;
-             }
-             else
-             {
-                 IsNumber = false;
-             }
-             Console.WriteLine("Check on Number equals to 98 results in: - {0} ", IsNumber  );
-             */
+            //Types in C#
+            //................Nullable Type........We CAN initialize these valuse with NULL..............
+            string s = null;
 
-            //................ Using Ternary Operator ......................
-            int number = 98;
-            bool isNumber98 = number == 98 ? true : false;
-            Console.WriteLine("Check condition answer = {0}", isNumber98);
+            //.............. Not Nullable Type.....We CAN NOT initialize these valuse with NULL.............
+            int i = null;         //........(Throwing an error)..................
 
-                }
+        
+            
+
+
+
+        }
+
     }
 
 }
