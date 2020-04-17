@@ -33,8 +33,40 @@ Verbatim literals make escape sequences translate as normal printable characters
 
 
 //Lecture 5
+//Operators
 Assignment Operator =
 Arithmetic Operators like +,-,*,/,% 
 Comparison Operators like ==, !=,>, >=, <, <= 
 Conditional Operators like &&, ||
-Ternary Operator, simplfies 10 lines code for a simple condition in just 3 lines
+Ternary Operator , simplfies 10 lines code for a simple condition in just 3 lines
+e.g. int num = 100;
+bool inNumber= number ==98 ?true: false;
+
+
+//Lecture 6
+//Nullable Types
+C# types  are divided into 2 broad categories.
+1. Not-Nullable types................(can not be initialize without any value):
+     e.g. int, bool.
+     We can make Not-Nullable as Nullable by putting a "?" Question Marks.
+     
+2. Nullable types........................(can be initialize without any value):
+     e.g. string 
+     
+Nullable are more improtant
+Not Nullable can  be cunverted to Nullable using "?" 
+Used Here:
+bool yes= true;
+bool no= false;
+enter your choice = ? (yes or no)
+//if user select no option this bool would be initialize as null so we always try to convert not nullable to nullable type using "?". And this is very benificient.
+
+Note:  Nullable and Not Nullable conversion is EXPLICIT CONVERSION not IMPLICIT
+Without Coalescing Operator code was dense
+Using Coalescing Operator code shrinks to only 3 lines
+            int? TicketsOnSale = null; //87;
+            int Tickets = TicketsOnSale ?? 0;
+            Console.WriteLine("Available Tickets={0}", Tickets);
+
+Value Types  - int, float, double, structs, enums etc   
+Reference Types – Interface, Class, delegates, arrays etc
