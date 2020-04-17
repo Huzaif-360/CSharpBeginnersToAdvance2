@@ -10,7 +10,7 @@ namespace CSharpYouTubeTutorials
             //UT Lecture 5
 
             //.............. Without Ternary Operator .......................
-            int number = 98;
+            /* int number = 98;
              bool IsNumber;
              if (number == 98)
              {
@@ -21,17 +21,14 @@ namespace CSharpYouTubeTutorials
                  IsNumber = false;
              }
              Console.WriteLine("Check on Number equals to 98 results in: - {0} ", IsNumber  );
-            
+             */
 
-         }//................ Using Ternary Operator ......................
+            //................ Using Ternary Operator ......................
+            int number = 98;
+            bool isNumber98 = number == 98 ? true : false;
+            Console.WriteLine("Check condition answer = {0}", isNumber98);
 
-        int number1 = 100;
-        bool isNumber100;
-        if(NotFiniteNumberException )
-         
-         
-        
-            
-        }
+                }
+    }
 
 }
