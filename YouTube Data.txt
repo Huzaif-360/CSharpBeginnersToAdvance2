@@ -70,3 +70,35 @@ Using Coalescing Operator code shrinks to only 3 lines
 
 Value Types  - int, float, double, structs, enums etc   
 Reference Types – Interface, Class, delegates, arrays etc
+
+
+//Lecture 7
+Type Conversion
+There are 3 types of type Conversion (Revised)
+              1. Implicit (Simplest)
+              2. Explicit (Cascading)
+              3. Non-Compatible (uisng Convert.ToInt/ToString  function) 
+              
+In decelaration it is necessary to mention "f" while describing float, mean if we only write:
+float f= 12.02; (wrong/error)
+//this would throw error because it would consider it as double type.
+float f= 12.02f; (no error)
+
+#Parse and Convert do same things (In the case of Non compatible conversion)
+ string str= "1234"
+ int number1 = int.Parse(str);
+ int number 2= Convert.ToInt32(str);
+ 
+ For more complex (non compatible conversion we use Tryparse() //function.
+ This TryPase would give a warning that you are requested to change the convertable string into integer.
+          
+          bool check = int.TryParse(convertnumber, out result); 
+            if (check)
+            {
+                Console.WriteLine("string to integer = {0}", result);
+            }
+            else
+            {
+                Console.WriteLine("Your string can not be converted into integer. Pleases reonsider it");
+            }
+            
