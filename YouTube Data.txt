@@ -118,3 +118,16 @@ float f= 12.02f; (no error)
    
 
 
+//Lecture 9
+//Comments
+Comments are used to document what the program does 
+1. Single line Comments   //
+2. Multi line Comments    /*  */
+3. XML Documentation Comments      -   /// (To be discussed in latter sections)
+
+To Comment and Uncomment, there are 2 ways
+1. Use the designer 
+         (No common way)
+2. Keyboard Shortcut: Ctrl+K, Ctrl+C and Ctrl+K, Ctrl+U 
+          (Easy & common way) 
+
