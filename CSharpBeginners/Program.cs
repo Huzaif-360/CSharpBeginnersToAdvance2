@@ -1,20 +1,19 @@
-﻿using System;
-
-namespace Strings
+﻿namespace Strings
 {
     class Program
     {
         static void Main(string[] args)
         {
-
-            int number = 10;
-
-            // Ternary operator example
-            bool isNumber10 = number == 10 ? true : false;
-
-            Console.WriteLine("Number == 10 is {0}", isNumber10);
-
-
-        }
+            //Udemy 37.
+            var a = 10;
+            var b = a;
+            b++;
+            System.Console.WriteLine("a: {0} b: {1}", a,b);
+            //................................................
+            int[] Array1 = new int[] { 1, 2, 3 };
+            int[] Array2 = Array1;
+            Array2[0] = 0;
+            System.Console.WriteLine("Array1[0]= {0} \n Array2[0]= {1}", Array1[0], Array2[0]);
+         }
     }
 }

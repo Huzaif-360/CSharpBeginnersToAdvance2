@@ -1,0 +1,14 @@
+//Section 4
+//Toipc 37
+//Refernece Type and Value Type
+
+1. Primitive Types known as value types:
+		and these are cover under Structs (take less space)
+		When you create a variable that is a value type. when we call them a part of memory called Stack is allocated for that 
+		variable. This memory allocation is done automatically so you don't have to worry about it. And these are removed early.
+
+
+2. Non- Primitive Types are known as refernece types:
+		and these are cover under classes. We allocate space for them. We store them on heap. Does not remove early.
+
+3. Copy of any array (which is itself build on heap, will be on stcak as it is copy and removed earlier)
