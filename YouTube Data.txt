@@ -70,3 +70,78 @@ Using Coalescing Operator code shrinks to only 3 lines
 
 Value Types  - int, float, double, structs, enums etc   
 Reference Types – Interface, Class, delegates, arrays etc
+
+
+//Lecture 7
+Type Conversion
+There are 3 types of type Conversion (Revised)
+              1. Implicit (Simplest)
+              2. Explicit (Cascading)
+              3. Non-Compatible (uisng Convert.ToInt/ToString  function) 
+              
+In decelaration it is necessary to mention "f" while describing float, mean if we only write:
+float f= 12.02; (wrong/error)
+//this would throw error because it would consider it as double type.
+float f= 12.02f; (no error)
+
+#Parse and Convert do same things (In the case of Non compatible conversion)
+ string str= "1234"
+ int number1 = int.Parse(str);
+ int number 2= Convert.ToInt32(str);
+ 
+ For more complex (non compatible conversion we use Tryparse() //function.
+ This TryPase would give a warning that you are requested to change the convertable string into integer.
+          
+          bool check = int.TryParse(convertnumber, out result); 
+            if (check)
+            {
+                Console.WriteLine("string to integer = {0}", result);
+            }
+            else
+            {
+                Console.WriteLine("Your string can not be converted into integer. Pleases reonsider it");
+            }
+            
+
+
+//Lecture 8
+//Arrays
+1. Arrays initialization
+2. Arrays Printing 
+      a) Simple printing using repeating Console.WriteLine 
+      b) using for Loop
+3. Advantages and Disadvantages of Arrays
+     Advantages:
+          Arrays are strongly typed.
+     Disadvantages:
+          Have fix size and type
+   
+
+
+//Lecture 9
+//Comments
+Comments are used to document what the program does 
+1. Single line Comments   //
+2. Multi line Comments    /*  */
+3. XML Documentation Comments      -   /// (To be discussed in latter sections)
+
+To Comment and Uncomment, there are 2 ways
+1. Use the designer 
+         (No common way)
+2. Keyboard Shortcut: Ctrl+K, Ctrl+C and Ctrl+K, Ctrl+U 
+          (Easy & common way) 
+
+
+
+//Lecture 10 
+//If Statement
+check condition
+if use && 
+     (Double &)this does not checks 2nd condition  if 1st condition is true
+if use &
+     (Single &) this checks both conditions even if 1st condition is true
+if use || 
+     (Single ||) this checks both conditions even if 1st condition is true
+use |
+     (Single |) this checks both conditions even if 1st condition is true
+
