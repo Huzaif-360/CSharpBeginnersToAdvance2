@@ -13,6 +13,3 @@
 
 3. Copy of any array (which is itself build on heap, will be on stcak as it is copy and removed earlier)
 
-//Topic 38
-In value type both copied and original elements have different locations
-but in Reference type both copied and original are located in the same location in HEAP, as only there reference is passed.
