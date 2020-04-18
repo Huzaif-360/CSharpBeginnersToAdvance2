@@ -145,3 +145,12 @@ if use ||
 use |
      (Single |) this checks both conditions even if 1st condition is true
 
+
+//Lecture 11
+//Switch Statement
+This statement Replaces if/else with case and reduces the code complexity
+Case is used in switch block.
+Case statement ends using break statement.
+case 10:
+case 20:   (used for OR statement)
+case 30:
