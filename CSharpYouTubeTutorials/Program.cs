@@ -18,22 +18,26 @@ namespace CSharpYouTubeTutorials
             {
                 Console.WriteLine("Your Number = 1");
             }
-            if (Number == 2)
+            else if (Number == 2)
             {
                 Console.WriteLine("Your Number = 2");
             }
-            if (Number == 3)
+            else if (Number == 3)
             {
                 Console.WriteLine("Your Number = 3");
             }
-            if (Number == 4)
+            else if (Number == 4)
             {
                 Console.WriteLine("Your Number = 4");
             }
-            if (Number != 1 && Number != 2 && Number !=3 && Number != 4)
+
+            /* No need to do this even 
+             * else if (Number != 1 && Number != 2 && Number !=3 && Number != 4)
             {
                 Console.WriteLine("Your Number is not equla to 1,2,3,4 ");
             }
+            */
+
            
         }
 
