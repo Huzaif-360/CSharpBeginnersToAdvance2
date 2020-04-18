@@ -1,19 +1,33 @@
 ﻿namespace Strings
 {
+
+    //Udemy 38;
+    public class Person
+    {
+        public int Age;
+    }
     class Program
     {
         static void Main(string[] args)
         {
-            //Udemy 37.
-            var a = 10;
-            var b = a;
-            b++;
-            System.Console.WriteLine("a: {0} b: {1}", a,b);
-            //................................................
-            int[] Array1 = new int[] { 1, 2, 3 };
-            int[] Array2 = Array1;
-            Array2[0] = 0;
-            System.Console.WriteLine("Array1[0]= {0} \n Array2[0]= {1}", Array1[0], Array2[0]);
-         }
+            //Value type..(Independent).......
+            var number = 1;
+            // compy of number is sent to Increment Method 
+            Increment(number);
+            System.Console.WriteLine(number);
+
+            //.............Reference type .... use class......(Dependent)................
+            var person = new Person() { Age = 20 };
+            MakeOld(person);
+            System.Console.WriteLine(person.Age);
+        }
+        public static void Increment(int number) // this number is in different part of memory and in main number is at different location
+        {
+            number += 10;
+        }
+        public static void MakeOld(Person person)
+        {
+            person.Age += 10;
+        }
     }
 }
