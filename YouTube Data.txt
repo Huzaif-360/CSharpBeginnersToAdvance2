@@ -131,3 +131,17 @@ To Comment and Uncomment, there are 2 ways
 2. Keyboard Shortcut: Ctrl+K, Ctrl+C and Ctrl+K, Ctrl+U 
           (Easy & common way) 
 
+
+
+//Lecture 10 
+//If Statement
+check condition
+if use && 
+     (Double &)this does not checks 2nd condition  if 1st condition is true
+if use &
+     (Single &) this checks both conditions even if 1st condition is true
+if use || 
+     (Single ||) this checks both conditions even if 1st condition is true
+use |
+     (Single |) this checks both conditions even if 1st condition is true
+
