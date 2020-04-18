@@ -14,31 +14,45 @@ namespace CSharpYouTubeTutorials
             int Number = Convert.ToInt32(number);
             Console.WriteLine(Number);
 
-            if (Number==1)
+            //........................... 1............................(Double Pipe) this does not checks 2nd condition  if 1st condition is true
+            if (Number == 10 || Number==20 )
             {
-                Console.WriteLine("Your Number = 1");
+                Console.WriteLine("Entered Number equals to 10 or 20");
             }
-            else if (Number == 2)
+           else
             {
-                Console.WriteLine("Your Number = 2");
-            }
-            else if (Number == 3)
-            {
-                Console.WriteLine("Your Number = 3");
-            }
-            else if (Number == 4)
-            {
-                Console.WriteLine("Your Number = 4");
+                Console.WriteLine("Entered Number is neither 10 nor 20");
             }
 
-            /* No need to do this even 
-             * else if (Number != 1 && Number != 2 && Number !=3 && Number != 4)
+            //........................... 2............................(Single Pipe) this checks both conditions even if 1st condition is true
+            if (Number == 10 | Number == 20)
             {
-                Console.WriteLine("Your Number is not equla to 1,2,3,4 ");
+                Console.WriteLine("Entered Number equals to 10 or 20");
             }
-            */
+            else
+            {
+                Console.WriteLine("Entered Number is neither 10 nor 20");
+            }
 
-           
+            //........................... 3............................(Double &)this does not checks 2nd condition  if 1st condition is true
+            if (Number == 10 && Number == 20)
+            {
+                Console.WriteLine("Entered Number equals to 10 and 20");
+            }
+            else
+            {
+                Console.WriteLine("Entered Number is neither 10 nor 20");
+            }
+            //........................... 4............................ (Single &) this checks both conditions even if 1st condition is true
+            if (Number == 10 & Number == 20)
+            {
+                Console.WriteLine("Entered Number equals to 10 and  20");
+            }
+            else
+            {
+                Console.WriteLine("Entered Number is neither 10 nor 20");
+            }
+
         }
 
     }
