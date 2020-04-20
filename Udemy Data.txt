@@ -52,3 +52,18 @@ Arrays:
 			var array = new Array[3][4];
 		2. Jagged:
 			var array = new Array[3][];
+
+
+//Lecture 53
+	Arrays (Fixed Size)
+		Functions of Arrays:
+			clear
+			sort
+			reverse
+			length
+			clear
+
+
+
+//Leture 54
+Lists (Dynamic Size)
