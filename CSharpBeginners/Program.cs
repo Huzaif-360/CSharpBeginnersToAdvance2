@@ -13,7 +13,16 @@ namespace CSharpBeginners
         {
             /*Section 8
              * Working with text
-             * Introduction
+             
+            Strings
+	        Text
+	        Formating
+	        Searching
+	        Subtracting
+	        Replacing
+   	        Null Check
+	        Split
+
             */
 
 
