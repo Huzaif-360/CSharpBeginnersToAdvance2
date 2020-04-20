@@ -17,4 +17,13 @@
 //Section 5 
 //Lecture 42
 If/else statements
+Switch Statement
 
+
+//Lexture 44
+1. for Loop
+2. foreach loop
+3. while loop
+4. do while loop
+5. break
+6. continue 

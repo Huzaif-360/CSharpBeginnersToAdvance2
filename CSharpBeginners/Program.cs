@@ -5,30 +5,35 @@ namespace CSharpBeginners
     //Udemy 42;
     class Program
     {
-        public enum season
-        {
-            Summer,
-            Spring,
-            Winter,
-            Autumn
-        }
+        
         static void Main(string[] args)
         {
-            var s1 = season.Winter;
-            switch(s1)
+
+            /*udemy 45
+             * 
+             * 
+            for (var i = 0; i <= 10; i++)
             {
-                case season.Spring:
-                    Console.WriteLine("Flowers");
-                    break;
-                case season.Winter:
-                    Console.WriteLine("cool weather");
-                    break;
-                default:
-                    Console.WriteLine("nothing");
-                    break;
+                if (i % 3 == 0)
+                {
+                    Console.WriteLine(i);
+                }
+            }
+            */
+            //Method 1
+            var Name = "Muhammad Huzaifa Shah";
+            for (var i = 0; i < Name.Length; i++)
+            {
+                Console.WriteLine(Name[i]);
             }
 
-         }
+            //Method 2
+            foreach (var charac in Name)
+            {
+                Console.WriteLine(charac);
+            }
+
+        }
 
     }
 }
