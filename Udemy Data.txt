@@ -27,3 +27,7 @@ Switch Statement
 4. do while loop
 5. break
 6. continue 
+
+//Lecture 47
+Space Check
+if (string.IsNullOrWhiteSpace(Name))

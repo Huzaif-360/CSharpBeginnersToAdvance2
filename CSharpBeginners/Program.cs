@@ -8,31 +8,49 @@ namespace CSharpBeginners
         
         static void Main(string[] args)
         {
-
-            /*udemy 45
-             * 
-             * 
-            for (var i = 0; i <= 10; i++)
+            /* var check = 0;
+            //udemy 46 While Loop
+            while (check <= 5)
             {
-                if (i % 3 == 0)
+                if (check % 2 == 0)
                 {
-                    Console.WriteLine(i);
+                    Console.WriteLine(check);
                 }
+                check++;
+            }
+
+
+
+            //.............While Type 1.......................
+            while (true)
+            {
+                Console.WriteLine("Enter your name:- ");
+                var Name = Console.ReadLine();
+
+                if (string.IsNullOrWhiteSpace(Name))
+                {
+                    break;
+                }
+                Console.WriteLine("@Echo : " + Name);
             }
             */
-            //Method 1
-            var Name = "Muhammad Huzaifa Shah";
-            for (var i = 0; i < Name.Length; i++)
-            {
-                Console.WriteLine(Name[i]);
-            }
 
-            //Method 2
-            foreach (var charac in Name)
-            {
-                Console.WriteLine(charac);
-            }
 
+            //.............While Type 2.......................
+
+            while (true)
+            {
+                Console.WriteLine("Enter your name:- ");
+                var Name = Console.ReadLine();
+
+                if (!string.IsNullOrWhiteSpace(Name))
+                {
+                    Console.WriteLine("@Echo : " + Name);
+                    continue;
+                }
+                break;
+
+            }
         }
 
     }
