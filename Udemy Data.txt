@@ -29,5 +29,15 @@ Switch Statement
 6. continue 
 
 //Lecture 47
-Space Check
-if (string.IsNullOrWhiteSpace(Name))
+//Space Check
+Tupe 1: 
+	if (string.IsNullOrWhiteSpace(Name))
+	break;
+Type 2:
+	if (string.IsNullOrWhiteSpace(Name))
+	continue;
+
+
+Lecture 48
+//Random Classes
+

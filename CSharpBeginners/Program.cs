@@ -2,55 +2,60 @@
 namespace CSharpBeginners
 {
 
-    //Udemy 42;
+    
     class Program
     {
         
         static void Main(string[] args)
         {
-            /* var check = 0;
-            //udemy 46 While Loop
-            while (check <= 5)
+            //Udemy 48 
+            //Random Classes
+
+
+
+            /*Any Random Numbers
+            var random = new Random();
+            for (var i=0; i<10; i++)
             {
-                if (check % 2 == 0)
-                {
-                    Console.WriteLine(check);
-                }
-                check++;
+                Console.WriteLine(random.Next());
             }
+            
 
-
-
-            //.............While Type 1.......................
-            while (true)
+            // Random Numbers in Limits
+            var random = new Random();
+            for (var i = 0; i < 10; i++)
             {
-                Console.WriteLine("Enter your name:- ");
-                var Name = Console.ReadLine();
-
-                if (string.IsNullOrWhiteSpace(Name))
-                {
-                    break;
-                }
-                Console.WriteLine("@Echo : " + Name);
+                Console.WriteLine(random.Next(1,22));
             }
+            
+
+            //Random Character In ASCII
+            var random = new Random();
+            for (var i = 0; i < 10; i++)
+            {
+                Console.WriteLine((char)random.Next(97, 122));
+            }
+            
+
+            //Random Character In ASCII
+            //FROM A_Z
+            var random = new Random();
+            for (var i = 0; i < 10; i++)
+            
+                Console.Write((char)('a' + random.Next(0,26)));
+             Console.WriteLine();
+            
             */
 
-
-            //.............While Type 2.......................
-
-            while (true)
-            {
-                Console.WriteLine("Enter your name:- ");
-                var Name = Console.ReadLine();
-
-                if (!string.IsNullOrWhiteSpace(Name))
-                {
-                    Console.WriteLine("@Echo : " + Name);
-                    continue;
-                }
-                break;
-
-            }
+            //Create a Password
+            char[] buffer = new char[10];
+            var random = new Random();
+            for (var i = 0; i < 10; i++)
+            
+                buffer[i]= ((char)('a' + random.Next(0, 26)));
+                var password = new string(buffer);
+                Console.WriteLine(buffer);
+            
         }
 
     }
