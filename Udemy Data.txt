@@ -88,3 +88,16 @@ Console.WriteLine("Year "+ now.Year);
             Console.WriteLine("Day "+now.Day);
             Console.WriteLine("Minute "+now.Minute);
             Console.WriteLine("Hour "+now.Hour);
+
+
+
+//Section 8
+//Working with Text
+
+	Text
+	Formating
+	Searching
+	Subtracting
+	Replacing
+	Null Check
+	Split
