@@ -34,8 +34,25 @@ namespace CSharpBeginners
             Console.WriteLine("Minute "+now.Minute);
             Console.WriteLine("Hour "+now.Hour);
 
+            //..........Tommorrow ...............
+            var tomorrow = now.AddDays(3);
+            Console.WriteLine(tomorrow);
+
+            //.............Yesterday ............
+            var yesterday = now.AddDays(-1);
+            Console.WriteLine(yesterday);
+
+            //C# Date Time formats
+            Console.WriteLine(now.ToLongDateString());
+            Console.WriteLine(now.ToShortDateString());
+            Console.WriteLine(now.ToLongTimeString());
+            Console.WriteLine(now.ToShortTimeString());
+            Console.WriteLine(now.ToString("dd-MM-yyyy"));
+            Console.WriteLine(now.ToString("yyyy-MM-dd"));
+
+
 
         }
-  
+
     }
 }
