@@ -12,4 +12,3 @@
 		and these are cover under classes. We allocate space for them. We store them on heap. Does not remove early.
 
 3. Copy of any array (which is itself build on heap, will be on stcak as it is copy and removed earlier)
-
