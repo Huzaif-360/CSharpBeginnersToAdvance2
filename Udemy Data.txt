@@ -41,3 +41,14 @@ Type 2:
 Lecture 48
 //Random Classes
 
+
+//..............Section 6.............
+//Arrays and Lists
+
+Arrays:
+	Single D:
+	Multi D:
+		1. Rectangular:
+			var array = new Array[3][4];
+		2. Jagged:
+			var array = new Array[3][];

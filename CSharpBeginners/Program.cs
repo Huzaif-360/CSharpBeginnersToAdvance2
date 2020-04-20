@@ -2,61 +2,46 @@
 namespace CSharpBeginners
 {
 
-    
+    //Udemy 42;
     class Program
     {
         
         static void Main(string[] args)
         {
-            //Udemy 48 
-            //Random Classes
+            //Section 6 Arrays and Lists
+            //Lecture 
 
+            //Length
+            var Array1 = new int[3] { 1, 2, 3 };
+            Console.WriteLine("Length = "+ Array1.Length  );
 
+            //IndexOf
+            var index = Array.IndexOf(Array1, 3);
+            Console.WriteLine(index);
 
-            /*Any Random Numbers
-            var random = new Random();
-            for (var i=0; i<10; i++)
+            //Clear
+            Array.Clear(Array1, 0, 2);
+            //Check after Clear
+            foreach (var n in Array1)
+            Console.WriteLine(n);
+
+            //Sorting 
+            Array.Sort(Array1);
+            //Check after Sorting
+            foreach (var n in Array1)
             {
-                Console.WriteLine(random.Next());
+                Console.WriteLine(n);
             }
-            
 
-            // Random Numbers in Limits
-            var random = new Random();
-            for (var i = 0; i < 10; i++)
+
+            //Reverse of Array
+            Array.Reverse(Array1);
+            //Check after Reversing
+            foreach (var n in Array1)
             {
-                Console.WriteLine(random.Next(1,22));
+                Console.WriteLine(n);
             }
-            
-
-            //Random Character In ASCII
-            var random = new Random();
-            for (var i = 0; i < 10; i++)
-            {
-                Console.WriteLine((char)random.Next(97, 122));
-            }
-            
-
-            //Random Character In ASCII
-            //FROM A_Z
-            var random = new Random();
-            for (var i = 0; i < 10; i++)
-            
-                Console.Write((char)('a' + random.Next(0,26)));
-             Console.WriteLine();
-            
-            */
-
-            //Create a Password
-            char[] buffer = new char[10];
-            var random = new Random();
-            for (var i = 0; i < 10; i++)
-            
-                buffer[i]= ((char)('a' + random.Next(0, 26)));
-                var password = new string(buffer);
-                Console.WriteLine(buffer);
-            
         }
-
+  
     }
 }
