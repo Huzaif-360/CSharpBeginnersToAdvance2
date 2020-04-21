@@ -1,5 +1,7 @@
 ﻿using System;
-//using System.Collections.Generic;
+using System.Collections.Generic;
+
+
 
 
 namespace CSharpBeginners
@@ -13,29 +15,35 @@ namespace CSharpBeginners
         {
             ///Section 8
             //Working with text
-            //Lecture 64
+            //Lecture 69
+            var sentence = "very very very very very very very very very very very very very very very very much long sentence";
+            const int count = 20;
+            if (sentence.Length < count)
+            {
+                Console.WriteLine(sentence);
+            }
+            else
+            {
+                var words = sentence.Split(' ');
+                var totalchar = 0;
 
 
-            //String to int
-            var num = "123";
-            var str = int.Parse(num);
-            Console.WriteLine(str);
+                //List for strings 
+                var summarywords = new List<string>();
 
+                foreach(var word in words)
+                {
+                    
+                    totalchar = word.Length + 1;
+                    summarywords.Add(word);
+                    if (totalchar > count)
+                        break;
+                }
+                //join
+                var summary= String.Join(" ", summarywords + "...");
+                Console.WriteLine(summary);
 
-            //int to string
-            var n1 = 123;
-            var n2 = Convert.ToInt32(n1);
-            Console.WriteLine(n2);
-
-            //Trim Name   ...............Trim Extra Spaces.........
-            var myfullname = "Muhammad Huzaifa Shah     ";
-            myfullname = myfullname.Trim();
-            Console.WriteLine("My Trip Name = {0}", myfullname);
-
-            //...............
-            var index = myfullname.IndexOf(" ");
-
-
+            }
 
 
 
