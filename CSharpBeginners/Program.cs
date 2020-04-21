@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-
-
-
+//using System.Collections.Generic;
+using System.Text;
 
 namespace CSharpBeginners
 {
@@ -15,43 +13,37 @@ namespace CSharpBeginners
         {
             ///Section 8
             //Working with text
-            //Lecture 69
-            var sentence = "very very very very very very very very very very very very very very very very much long sentence";
-            var summary = SummerizingText(sentence);
-            Console.WriteLine(summary);
+            //Lecture 70
+            //String Builder
+            var builder = new StringBuilder();
+            builder.Append('-', 10);
+            Console.WriteLine(builder);
+            builder
+                //Append string
+                .Append('+', 10)
+
+                //Append line
+                .AppendLine()
+
+                //Append name
+                .Append("Huzaifa")
+
+                .AppendLine()
+                .Append('+', 10)
+                .Replace('+', '-')
+                .Remove(0, 10)
+                .Insert(0, new string("Name: "));
+            builder.Append("Huzaifa");
+            Console.WriteLine(builder);
+
+            //Show first Char
+            Console.WriteLine("First Char: " + builder[1]);
+
+
+
+
+
         }
-           
-        //Method Creation
-            static string SummerizingText(string text, int count =20)
-            {
-                //const int count = 20;
-
-                if (text.Length < count)
-
-                    return text;
-                
-                var words = text.Split(' ');
-                var totalchar = 0;
-
-
-                //List for strings 
-                var summarywords = new List<string>();
-
-                foreach (var word in words)
-                {
-
-                    totalchar = word.Length + 1;
-                    summarywords.Add(word);
-                    if (totalchar > count)
-                        break;
-                }
-                //join
-                var summary = String.Join(" ", summarywords + "...");
-                return summary;
-
-                
-            }
-
 
         }
 
