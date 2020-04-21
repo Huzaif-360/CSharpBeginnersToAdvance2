@@ -1,6 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 //using System.Collections.Generic;
-using System.Text;
+//using System.Text;
 
 namespace CSharpBeginners
 {
@@ -13,31 +14,20 @@ namespace CSharpBeginners
         {
             ///Section 8
             //Working with text
-            //Lecture 70
-            //String Builder
-            var builder = new StringBuilder();
-            builder.Append('-', 10);
-            Console.WriteLine(builder);
-            builder
-                //Append string
-                .Append('+', 10)
 
-                //Append line
-                .AppendLine()
+            Console.Write("Enter a word: ");
+            // Note the ToLower() here. This is used to count for both A and a. 
+            var input = Console.ReadLine().ToLower();
 
-                //Append name
-                .Append("Huzaifa")
+            var vowels = new List<char>(new char[] { 'a', 'e', 'o', 'u', 'i' });
+            var vowelsCount = 0;
+            foreach (var character in input)
+            {
+                if (vowels.Contains(character))
+                    vowelsCount++;
+            }
 
-                .AppendLine()
-                .Append('+', 10)
-                .Replace('+', '-')
-                .Remove(0, 10)
-                .Insert(0, new string("Name: "));
-            builder.Append("Huzaifa");
-            Console.WriteLine(builder);
-
-            //Show first Char
-            Console.WriteLine("First Char: " + builder[1]);
+            Console.WriteLine(vowelsCount);
 
 
 
@@ -45,7 +35,7 @@ namespace CSharpBeginners
 
         }
 
-        }
+    }
 
     }
 
