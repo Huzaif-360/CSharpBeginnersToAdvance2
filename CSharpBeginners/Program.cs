@@ -14,30 +14,23 @@ namespace CSharpBeginners
         static void Main(string[] args)
         {
             //Section 9 
-            //Lecture 73
-            //file    (for small small files)
+            //Lecture 74
+            //Directory and DirectoryInfo
 
-             var path = @"C:\myfile\file.jgp";
-             File.Copy(@"C:\temp\myfile.jgp", @"D:\temp\myfile.jgp");
-             File.Delete(path);
-             //fileinfo (for lare files)
-             Console.WriteLine();
-             if (File.Exists(path))
-             {
+            //Directory 
+            var path = @"C:\Users\Huzaifa\Downloads\Video";
 
-             }
-
-            var contant = File.ReadAllText(path);
-            var fileinfo = new FileInfo(path);
-            fileinfo.CopyTo("---");
-            fileinfo.Delete();
-            if (fileinfo.Exists)
+            Directory.CreateDirectory(@"c:\folder");
+            var files = Directory.GetFiles(path, "*.*", SearchOption.AllDirectories);
+            foreach (var file in files)
             {
-                //
+                var content = File.ReadAllLines(path);
             }
-        }
+                Console.WriteLine(files);
+            }
 
-    }
+
+        }
 
     }
 
