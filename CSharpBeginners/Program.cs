@@ -17,18 +17,24 @@ namespace CSharpBeginners
             //Lecture 73
             //file    (for small small files)
 
-            var path = @"C:\myfile\file.jgp";
-            File.Copy(@"C:\temp\myfile.jgp", @"D:\temp\myfile.jgp");
-            File.Delete(path);
-            //fileinfo (for lare files)
-            Console.WriteLine();
-            if (File.Exists(path))
+             var path = @"C:\myfile\file.jgp";
+             File.Copy(@"C:\temp\myfile.jgp", @"D:\temp\myfile.jgp");
+             File.Delete(path);
+             //fileinfo (for lare files)
+             Console.WriteLine();
+             if (File.Exists(path))
+             {
+
+             }
+
+            var contant = File.ReadAllText(path);
+            var fileinfo = new FileInfo(path);
+            fileinfo.CopyTo("---");
+            fileinfo.Delete();
+            if (fileinfo.Exists)
             {
-
+                //
             }
-
-
-
         }
 
     }
