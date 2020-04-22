@@ -14,20 +14,9 @@ namespace CSharpBeginners
         static void Main(string[] args)
         {
             //Section 9 
-            //
-
-           // var path = @"C:\Users\Downloads\Video";
-
-            var path = @"C:\Users\Downloads\Video\image.jpg";
-
-            Directory.CreateDirectory(@"c:\folder");
-            var files = Directory.GetFiles(path, "*.*", SearchOption.AllDirectories);
-            foreach (var file in files)
-            {
-                Console.WriteLine(file);
-            }
-            var dotIndex = path.IndexOf('.');
-            var extension = path.Substring(dotIndex);
+            //Lecture 
+            //Completed Exercies
+           
         }
 
         }
