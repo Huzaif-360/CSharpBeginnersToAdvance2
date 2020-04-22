@@ -14,25 +14,21 @@ namespace CSharpBeginners
         static void Main(string[] args)
         {
             //Section 9 
-            //Lecture 74
-            //Directory and DirectoryInfo
+            //
 
-            //Directory 
-            var path = @"C:\Users\Huzaifa\Downloads\Video";
+           // var path = @"C:\Users\Downloads\Video";
+
+            var path = @"C:\Users\Downloads\Video\image.jpg";
 
             Directory.CreateDirectory(@"c:\folder");
             var files = Directory.GetFiles(path, "*.*", SearchOption.AllDirectories);
             foreach (var file in files)
             {
-                var content = File.ReadAllLines(path);
+                Console.WriteLine(file);
             }
-                Console.WriteLine(files);
-            }
-
-        // DirectoryInfo
-        var directoryInfo = new DirectoryInfo(path);
-        directoryInfo.GetFiles();
-            directoryInfo.GetDirectories();
+            var dotIndex = path.IndexOf('.');
+            var extension = path.Substring(dotIndex);
+        }
 
         }
 
