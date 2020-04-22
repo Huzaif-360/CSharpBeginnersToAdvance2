@@ -14,8 +14,8 @@ namespace CSharpBeginners
         static void Main(string[] args)
         {
             //Section 9 
-            //Lecture 
-            //Completed Exercies
+            //Lecture 77 and 78
+            //Completed Quiz and summary
            
         }
 
