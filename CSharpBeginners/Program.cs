@@ -29,8 +29,12 @@ namespace CSharpBeginners
                 Console.WriteLine(files);
             }
 
+        // DirectoryInfo
+        var directoryInfo = new DirectoryInfo(path);
+        directoryInfo.GetFiles();
+            directoryInfo.GetDirectories();
 
         }
 
-    }
+}
 
