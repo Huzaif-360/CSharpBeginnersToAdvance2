@@ -16,31 +16,23 @@ namespace CSharpBeginners
         {
             //Section 10 
             //Debugging Application
-            //Lecture 81
+            //Lecture 83
 
-            var numbers = new List<int> { 1, 2 };
-            var smallests = GetSmallests(numbers, 3);
+/*Local and Autos Windows
+ *F5 :
+ *    To run the application in debug mode.
+ *F10 : 
+ *    Step over a line
+ *F11:
+ *    To into a method
+ *Shit F5:
+ *     Stop Debugging
+ *    
 
-            foreach (var number in numbers)
-                Console.WriteLine(number);
+
         }
-            public static List<int> GetSmallests(List<int> list, int count)
-            {
-                if (list == null)
-                {
-                    throw new ArgumentNullException("list");
-                }
-                if (list.Count < count || count <= 0)
-                {
-                    throw new ArgumentOutOfRangeException("Count", "count should be between 1 and count");
-                }
-            return list;
 
-        //Errors
-
-            }
-
-    }
+}
 }
 
 
