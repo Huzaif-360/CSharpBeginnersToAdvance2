@@ -1,14 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 //using System.Collections.Generic;
-using System.IO;
+//using System.IO;
 //using System.Collections.Generic;
 //using System.Text;
 
 namespace CSharpBeginners
 {
 
-    
+
     class Program
     {
 
@@ -16,35 +16,33 @@ namespace CSharpBeginners
         {
             //Section 10 
             //Debugging Application
-            //Lecture 80
+            //Lecture 81
 
-            var numbers = new List<int> { 1, 2, 3, 4, 5, 6 };
+            var numbers = new List<int> { 1, 2 };
             var smallests = GetSmallests(numbers, 3);
+
             foreach (var number in numbers)
                 Console.WriteLine(number);
-
         }
-
-        //Function 1
-        public static List<int> GetSmallests(List<int> list, int count)
-        {
-            var smallests = new List<int>();
-            
-            //creating buffers
-            var buffer = new List<int>(list);
-
-            //while for checking
-            while (smallests.Count < count)
+            public static List<int> GetSmallests(List<int> list, int count)
             {
-                var min = GetSmallest(list);
-                var min = GetSmallest(buffer);
-                smallests.Add(min);
-                //list.Remove(min);
-                buffer.Remove(min);
+                if (list == null)
+                {
+                    throw new ArgumentNullException("list");
+                }
+                if (list.Count < count || count <= 0)
+                {
+                    throw new ArgumentOutOfRangeException("Count", "count should be between 1 and count");
+                }
+            return list;
+
+        //Errors
+
             }
-        }
 
     }
-
 }
+
+
+
 
