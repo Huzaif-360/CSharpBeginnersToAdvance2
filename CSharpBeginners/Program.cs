@@ -16,12 +16,11 @@ namespace CSharpBeginners
         {
             //Section 10 
             //Debugging Application
-            //Lecture 79
-            var path = @"C:\Users\awais\Downloads\Video\image.jpg";
+            //Lecture 80
+
             var numbers = new List<int> { 1, 2, 3, 4, 5, 6 };
             var smallests = GetSmallests(numbers, 3);
-
-            foreach (var number in smallests)
+            foreach (var number in numbers)
                 Console.WriteLine(number);
 
         }
@@ -30,32 +29,19 @@ namespace CSharpBeginners
         public static List<int> GetSmallests(List<int> list, int count)
         {
             var smallests = new List<int>();
+            
+            //creating buffers
+            var buffer = new List<int>(list);
 
-            Console.WriteLine("Extension: " + Path.GetExtension(path));
-            Console.WriteLine("File Name: " + Path.GetFileName(path));
-            Console.WriteLine("File Name without Extension: " + Path.GetFileNameWithoutExtension(path));
-            Console.WriteLine("Directory Name: " + Path.GetDirectoryName(path));
+            //while for checking
             while (smallests.Count < count)
             {
                 var min = GetSmallest(list);
+                var min = GetSmallest(buffer);
                 smallests.Add(min);
-                list.Remove(min);
+                //list.Remove(min);
+                buffer.Remove(min);
             }
-            return smallests;
-        }
-            //Function 2
-            public static int GetSmallest(List<int> list)
-            {
-                // Assume the first number is the smallest in the list.
-                var min = list[0];
-                for (var i = 1; i < list.Count; i++)
-                {
-                    if (list[i] < min)
-                        min = list[i];
-                }
-                return min;
-            }
-
         }
 
     }
