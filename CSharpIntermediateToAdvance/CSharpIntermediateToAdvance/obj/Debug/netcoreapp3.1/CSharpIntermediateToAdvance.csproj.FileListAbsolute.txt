@@ -5,7 +5,6 @@ C:\Users\Saifia computers\source\repos\CSharpBeginnersToAdvance2\CSharpIntermedi
 C:\Users\Saifia computers\source\repos\CSharpBeginnersToAdvance2\CSharpIntermediateToAdvance\CSharpIntermediateToAdvance\bin\Debug\netcoreapp3.1\CSharpIntermediateToAdvance.dll
 C:\Users\Saifia computers\source\repos\CSharpBeginnersToAdvance2\CSharpIntermediateToAdvance\CSharpIntermediateToAdvance\bin\Debug\netcoreapp3.1\CSharpIntermediateToAdvance.pdb
 C:\Users\Saifia computers\source\repos\CSharpBeginnersToAdvance2\CSharpIntermediateToAdvance\CSharpIntermediateToAdvance\obj\Debug\netcoreapp3.1\CSharpIntermediateToAdvance.csprojAssemblyReference.cache
-C:\Users\Saifia computers\source\repos\CSharpBeginnersToAdvance2\CSharpIntermediateToAdvance\CSharpIntermediateToAdvance\obj\Debug\netcoreapp3.1\CSharpIntermediateToAdvance.csproj.CoreCompileInputs.cache
 C:\Users\Saifia computers\source\repos\CSharpBeginnersToAdvance2\CSharpIntermediateToAdvance\CSharpIntermediateToAdvance\obj\Debug\netcoreapp3.1\CSharpIntermediateToAdvance.AssemblyInfoInputs.cache
 C:\Users\Saifia computers\source\repos\CSharpBeginnersToAdvance2\CSharpIntermediateToAdvance\CSharpIntermediateToAdvance\obj\Debug\netcoreapp3.1\CSharpIntermediateToAdvance.AssemblyInfo.cs
 C:\Users\Saifia computers\source\repos\CSharpBeginnersToAdvance2\CSharpIntermediateToAdvance\CSharpIntermediateToAdvance\obj\Debug\netcoreapp3.1\CSharpIntermediateToAdvance.dll
