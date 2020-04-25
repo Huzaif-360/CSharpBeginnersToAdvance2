@@ -1,5 +1,6 @@
 ﻿//using System;
-using System.Collections.Generic;
+using System;
+//using System.Collections.Generic;
 //using System.Runtime.CompilerServices;
 namespace CSharpIntermediateToAdvance
 {
@@ -10,36 +11,47 @@ namespace CSharpIntermediateToAdvance
         {
 
             /*
-             //Lecture 11
-            //Fields
-                it is Variable 
-                Initialization:
-	                List<Order> Orders;(for this we have to make constructor)
-                and modified field:
-                (List<Order> Orders new List<Order> []; (benificient as we need no constructor)
-                Read only field: Effectiveness in obustuness of application
+             //Lecture 12 Access modifier:
+                1. Public
+                2. Private
+                3. Protected
+                4. internal
+                5. protected inheri
+                (this is done to make our program)
+
+                private int age;
+
+
+                OOP
+                1. Encapsulation/ Information Hiding
+                    (every class and function is responsible for it specific works)
+ 	                        1. Define fields as private
+	                        2.  Provide gatter /setters method as public
+
+                2. Inheritance
+                3. Polymorphism
+
             */
 
         }
-        public class Customer
+        public class Person
         {
 
-            //Fields
-            public int ID;
-            public string Name;
-            public readonly List<Order> Orders = new List<Order>();
+            //Access Provider/Modifier
+            //private and public
+            public int number = 0;
+            private DateTime _birthdate;
 
-            public Customer(int id)
+            public void SetBirthdate(DateTime birthdate)
             {
-                this.ID = id;
+                _birthdate = birthdate;
             }
 
-            public Customer(int id, string name)
-                : this(id)
+            public DateTime GetBirthdate()
             {
-                this.Name = name;
+                return _birthdate;
             }
         }
-        }
+    }
     }
 
