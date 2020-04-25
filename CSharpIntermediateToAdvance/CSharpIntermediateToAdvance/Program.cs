@@ -11,47 +11,41 @@ namespace CSharpIntermediateToAdvance
         {
 
             /*
-             //Lecture 12 Access modifier:
-                1. Public
-                2. Private
-                3. Protected
-                4. internal
-                5. protected inheri
-                (this is done to make our program)
+            //Lecture 13
+            Properties
+            property as a class member that encapsulates a getter and a center for accessing
+            a field. So why do we need a property simply for creating a getter setter with less code.
 
-                private int age;
+            to get rid of many setters and getters we use properties:
+            Properties are decelared as punlic and should be same datatype as fileds.
 
 
-                OOP
-                1. Encapsulation/ Information Hiding
-                    (every class and function is responsible for it specific works)
- 	                        1. Define fields as private
-	                        2.  Provide gatter /setters method as public
 
-                2. Inheritance
-                3. Polymorphism
+            Auto- implemented Properties:
 
             */
 
         }
         public class Person
         {
-
-            //Access Provider/Modifier
-            //private and public
-            public int number = 0;
             private DateTime _birthdate;
 
-            public void SetBirthdate(DateTime birthdate)
-            {
-                _birthdate = birthdate;
-            }
+            // private datatype of set this is now not changeble.
+           //................Method 1....................................
+            public DateTime Birthdate { get; private set; }
 
-            public DateTime GetBirthdate()
+            //Birthdate is a Property it is here helping us lower down the numbers of code.
+        
+            
+            
+            // .........................Method 2 .......................
+            /*  public DateTime Birthdate
             {
-                return _birthdate;
-            }
+                get { return _birthdate; }
+                set { _birthdate = value; }
+            }*/
         }
+
     }
-    }
+}
 
