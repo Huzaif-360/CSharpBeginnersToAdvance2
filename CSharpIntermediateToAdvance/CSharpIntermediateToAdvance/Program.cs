@@ -10,30 +10,50 @@ namespace CSharpIntermediateToAdvance
         {
 
             /*
-             //Lecture 9
-            Object Inilitiazers
-            Initializer is simply a syntax or quickly initializing an object without the need to call one of its constructors.
-            Well we do need that simply to avoid creating multiple constructors.
+             /Lecture 10
+            Methods
+            1. signature of methods
+
+            2. method overloading
+            (same name with different parameters)
+            Improvement: yes
+            (var result = calculator.Add[1,2,3,4]; (pram modifier)
+
+            3. modifiers
+                parama modifier (useful)
+                ref modifier (used in C# .net)
+               (change value type into refernece type)
+                out modifier(used in .Net)
             */
-            //Sytax
+            
             System.Console.WriteLine("Running Classe of Customers");
             var customer = new Customer();
             var customer1 = new Customer(1);
-           // var customer = new Customer() {  name = "huzaifa" };
+            int N= customer1.Addnum();
+            System.Console.WriteLine(N);
+            // var customer = new Customer() {  name = "huzaifa" };
         }
         public class Customer
         {
+            public int num = 0;
             public Customer()
                 {
             }
             public Customer(int a)
             {
+                 num = a;
             }
             public Customer(string n)
             {
             }
+
             public Customer(int a, int b)
             {
+            }
+            public int Addnum()
+            {
+                num += 2;
+                System.Console.WriteLine("Number= {0}", num);
             }
 
 
