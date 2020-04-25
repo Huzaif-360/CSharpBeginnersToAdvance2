@@ -1,63 +1,45 @@
 ﻿//using System;
-//using System.Collections.Generic;
+using System.Collections.Generic;
 //using System.Runtime.CompilerServices;
 namespace CSharpIntermediateToAdvance
 {
     class Program
     {
-        
+
         static void Main(string[] args)
         {
 
             /*
-             /Lecture 10
-            Methods
-            1. signature of methods
-
-            2. method overloading
-            (same name with different parameters)
-            Improvement: yes
-            (var result = calculator.Add[1,2,3,4]; (pram modifier)
-
-            3. modifiers
-                parama modifier (useful)
-                ref modifier (used in C# .net)
-               (change value type into refernece type)
-                out modifier(used in .Net)
+             //Lecture 11
+            //Fields
+                it is Variable 
+                Initialization:
+	                List<Order> Orders;(for this we have to make constructor)
+                and modified field:
+                (List<Order> Orders new List<Order> []; (benificient as we need no constructor)
+                Read only field: Effectiveness in obustuness of application
             */
-            
-            System.Console.WriteLine("Running Classe of Customers");
-            var customer = new Customer();
-            var customer1 = new Customer(1);
-            int N= customer1.Addnum();
-            System.Console.WriteLine(N);
-            // var customer = new Customer() {  name = "huzaifa" };
+
         }
         public class Customer
         {
-            public int num = 0;
-            public Customer()
-                {
-            }
-            public Customer(int a)
+
+            //Fields
+            public int ID;
+            public string Name;
+            public readonly List<Order> Orders = new List<Order>();
+
+            public Customer(int id)
             {
-                 num = a;
-            }
-            public Customer(string n)
-            {
+                this.ID = id;
             }
 
-            public Customer(int a, int b)
+            public Customer(int id, string name)
+                : this(id)
             {
+                this.Name = name;
             }
-            public int Addnum()
-            {
-                num += 2;
-                System.Console.WriteLine("Number= {0}", num);
-            }
-
-
         }
-    }
+        }
     }
 
