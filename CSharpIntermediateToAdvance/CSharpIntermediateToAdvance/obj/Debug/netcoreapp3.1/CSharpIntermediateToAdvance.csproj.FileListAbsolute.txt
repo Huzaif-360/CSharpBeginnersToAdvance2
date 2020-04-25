@@ -10,3 +10,4 @@ C:\Users\Saifia computers\source\repos\CSharpBeginnersToAdvance2\CSharpIntermedi
 C:\Users\Saifia computers\source\repos\CSharpBeginnersToAdvance2\CSharpIntermediateToAdvance\CSharpIntermediateToAdvance\obj\Debug\netcoreapp3.1\CSharpIntermediateToAdvance.dll
 C:\Users\Saifia computers\source\repos\CSharpBeginnersToAdvance2\CSharpIntermediateToAdvance\CSharpIntermediateToAdvance\obj\Debug\netcoreapp3.1\CSharpIntermediateToAdvance.pdb
 C:\Users\Saifia computers\source\repos\CSharpBeginnersToAdvance2\CSharpIntermediateToAdvance\CSharpIntermediateToAdvance\obj\Debug\netcoreapp3.1\CSharpIntermediateToAdvance.genruntimeconfig.cache
+C:\Users\Saifia computers\source\repos\CSharpBeginnersToAdvance2\CSharpIntermediateToAdvance\CSharpIntermediateToAdvance\obj\Debug\netcoreapp3.1\CSharpIntermediateToAdvance.csproj.CoreCompileInputs.cache
