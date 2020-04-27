@@ -11,49 +11,64 @@ namespace CSharpIntermediateToAdvance
         {
             /*  Section 4
              *  Inheritance - Second Pillar of OOP
-             *  Lecture 23
-             *  Constructors and Inheritance
-             *  
-             *  1. Base Class constructors are always executed first
-             *  
-                2. Base Class construstor are not inheited.
-                (in derived class we need to recreate constructor).
+             *  Lecture 24
+             *  Upcasting and Downcasting.
 
-             *  
-             *  
+            1. Conversion from derived class to a base class is UPCASTING.
+            2. Conversion from base class to a derived class is DOWN-CASTING.
+
+
+            UPCASTING:
+                This is Implicit conversion.
+                Circle Circle = new Circle();
+                Shape shape= cirlce;
+
+           DOWNCASTING:
+                This is explicit conversion
+                Circle anotherCircle= (Circle)shape;
+
+                We can not cast Circle to another type.
+	                1. It will give exceptioanl error
+	                2. Use keyword  (as) this would not give exception but onject will not b converted and it would execute new conditions
+	                3. USe Keyword (is) this chech type before conversion if type is not same it ends the execution.
              */
+
+            var shape = new Shape();
+            var text = (Text)shape;              // (This is Explicit Conversion)DownCasting....... But it is not safe because it can throw an exception 
+            var text1 = shape as Text;          // (This is Check) This is the safe method because if it can't type cast then it return null
+            if (text1 != null)
+            {
+                Console.WriteLine("ERROR Hai Bhai");
+            }
+            {
+
+            }
+            // Note: "IS" is keyword which we can use to check the type of object
+            if (text1 is Text)
+            {
+                Console.WriteLine("Object has type Text");
+            }
+
         }
-        //..............Class 1 Parent Class.....................
-        public class Vehicle
+
+        //Base Class
+        public class Shape
         {
-            private readonly string _registrationNumber;
+            public int Width { get; set; }
+            public int Height { get; set; }
+            public int X { get; set; }
+            public int Y { get; set; }
 
-            public Vehicle()
+            public void Draw()
             {
-                Console.WriteLine("Vehicle is being initialized.");
-            }
 
-            public Vehicle(string registrationNumber)
-            {
-                _registrationNumber = registrationNumber;
-                Console.WriteLine("Vehicle Initialization {0}", _registrationNumber);
             }
         }
-
-
-        //..............Class 2 Child Class.....................
-        public class Car : Vehicle
+        //Derived Class 
+        public class Text : Shape
         {
-            public Car()
-            {
-                Console.WriteLine("Car Initialization.");
-            }
-
-            public Car(string registrationNumber)
-                : base(registrationNumber)
-            {
-                Console.WriteLine("Car Initialization{0}", registrationNumber);
-            }
+            public int FontSize { get; set; }
+            public string FontName { get; set; }
         }
     }
 }
