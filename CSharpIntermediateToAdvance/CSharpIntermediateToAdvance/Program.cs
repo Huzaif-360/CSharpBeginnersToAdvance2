@@ -1,77 +1,54 @@
-﻿using System;
+﻿//using System;
 //using System.Runtime.CompilerServices;
 //using System.Collections.Generic;
 
 namespace CSharpIntermediateToAdvance
 {
-    class Program
-    {
+	class Program
+	{
 
-        static void Main(string[] args)
-        {
-            /*  Section 4
-             *  Inheritance - Second Pillar of OOP
-             *  Lecture 24
-             *  Upcasting and Downcasting.
+		static void Main(string[] args)
+		{
+		/*  Section 4
+		 *  Inheritance - Second Pillar of OOP
+		 *  Lecture 25
+		 *  Boxing and Unboxing
 
-            1. Conversion from derived class to a base class is UPCASTING.
-            2. Conversion from base class to a derived class is DOWN-CASTING.
+		Value and Reference Types
+		1. Value Types:
+			Stored on the stack
+			Have Shorter Life Time
+		e.g. All Primitive Data Types
+			Bytes, int, float, char, bool etc.
+			They are struct type.
 
 
-            UPCASTING:
-                This is Implicit conversion.
-                Circle Circle = new Circle();
-                Shape shape= cirlce;
+		2. Refernece Types:
+			Stored in the heap 
+		e.g. All Non- Primitive Data Types
+			Object, Array, String, DbMigrator etc...
 
-           DOWNCASTING:
-                This is explicit conversion
-                Circle anotherCircle= (Circle)shape;
+		OBJECT Class is the base of all classes in .NET Framework
+			Circle Circle = new Circle();
+			Shape shape= cirlce;
+			object shape= circle; // this means object is working as a var.
+			*/
 
-                We can not cast Circle to another type.
-	                1. It will give exceptioanl error
-	                2. Use keyword  (as) this would not give exception but onject will not b converted and it would execute new conditions
-	                3. USe Keyword (is) this chech type before conversion if type is not same it ends the execution.
-             */
+		//BOXING:
+			//	Thr process of converting a value type instance to an object refernece.
+					int number=10;   // number is a value type (This is on the stack now)
+					object obj= number; // Now this value type has become a refernce type this is boxing. (This is on the heap now)
+										//OR
+			object obj1 = 10; //(This is on the heap now)
 
-            var shape = new Shape();
-            var text = (Text)shape;              // (This is Explicit Conversion)DownCasting....... But it is not safe because it can throw an exception 
-            var text1 = shape as Text;          // (This is Check) This is the safe method because if it can't type cast then it return null
-            if (text1 != null)
-            {
-                Console.WriteLine("ERROR Hai Bhai");
-            }
-            {
-
-            }
-            // Note: "IS" is keyword which we can use to check the type of object
-            if (text1 is Text)
-            {
-                Console.WriteLine("Object has type Text");
-            }
-
-        }
-
-        //Base Class
-        public class Shape
-        {
-            public int Width { get; set; }
-            public int Height { get; set; }
-            public int X { get; set; }
-            public int Y { get; set; }
-
-            public void Draw()
-            {
-
-            }
-        }
-        //Derived Class 
-        public class Text : Shape
-        {
-            public int FontSize { get; set; }
-            public string FontName { get; set; }
-        }
-    }
+			//UNBOXING:
+			//	Oposite of BOXING, 
+			object obj2= 10;
+					int number1 = (int)obj;
+					//(This is on the stack now)
+				
+		}
+	}
 }
-
 
 
