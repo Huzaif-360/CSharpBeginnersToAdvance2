@@ -1,4 +1,4 @@
-﻿using System;
+﻿//using System;
 //using System.Runtime.CompilerServices;
 //using System.Collections.Generic;
 
@@ -9,56 +9,48 @@ namespace CSharpIntermediateToAdvance
 
         static void Main(string[] args)
         {
-            //    System.Console.WriteLine("This section is exercise section and 1 example done and 2nd is completed logically");
+			//    System.Console.WriteLine("This section is exercise section and 1 example done and 2nd is completed logically");
 
 
-            /*Lecture 18:
-              Inheritance   
-                (IS a Relationship)
-                    ::: CAR is a Vehicle
+			/*Lecture 20
+			//Favour Composition over Inheritance
 
-           What is Inheritance?
-                Inheritance is simply a kind of relationship between two classes that allows one to inherit code from the other is usually referred to as is a relationship.
+			1. Problem with Inheritance
+			Advantages: 
+					Code- Resue/ AND EASY TO RESUE
+			DisAdvantages:
+					1. Easily absued by designers/developers
+					2. Large hierarchies
+					3. Fragility
+					4. Cause Tighlty Coupling
+			EXAMPLE: Living things in a house i.e. Human/ Animals both of them can eat/steep/walk but what if we add fish, can fish walk?? this is error.
 
-           Why we use it?
-                1. Code re-use
-                2. Polymorphic Uses
 
-           In UML:
-                Representing Object: (SUPER CLASS)
-                        Parent/ Base CLass
-                Child Class: (SUB CLASS)
-                        Derived Class 
-            */
-        }
-        //Class 1:
-        public class PresentationObject
-        {
-            public int Width { get; set; }
-            public int Height { get; set; }
+			2. Advantages of Composition(Association) over Inheritance
+				Inheritance relation can be converted to compoition. This is FLEXIBILITY.
 
-            public void Copy()
-            {
-                Console.WriteLine("Object copied to clipboard.");
-            }
+			EXAMPLE: Same as used in Inheritance:
+				Living things in a house i.e. Human/ Animals both of them can eat/steep/walk but what if we add fish, can fish walk?? this is error.
+			NO it is not ERROR here. we crear new classes. 
+			Different Classes:
 
-            public void Duplicated()
-            {
-                Console.WriteLine("Object was duplicated.");
-            }
-        }
-        //Class 2:
-        public class Text : PresentationObject
-        {
-            public int FontSize { get; set; }
-            public string FontName { get; set; }
+			Person
+			Dog
+			Fish
+			Duck 
 
-            public void AddHyperlink(string url)
-            {
-                Console.WriteLine("Added a link" + url);
-            }
-        }
-    }
+			Classes(Functions): Animal, Walkable, Swiimmable:
+			This give us fleixbel and lose coupling
+
+			SUMMARY:
+				2 TYPES OF CLASSES:
+					1. INHERITANCE (IS-A RELATIONSHIP)
+					2.  COMPOSITION (HAS- A RELATIONSHIP)
+           */
+		}
+
+
+	}
 }
 
 
