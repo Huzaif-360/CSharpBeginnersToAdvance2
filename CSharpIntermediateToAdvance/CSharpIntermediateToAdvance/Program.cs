@@ -11,64 +11,51 @@ namespace CSharpIntermediateToAdvance
         {
             /*  Section 4
              *  Inheritance - Second Pillar of OOP
-             *  Lecture 22
-             *  Access Modifiers
+             *  Lecture 23
+             *  Constructors and Inheritance
+             *  
+             *  1. Base Class constructors are always executed first
+             *  
+                2. Base Class construstor are not inheited.
+                (in derived class we need to recreate constructor).
+
              *  
              *  
-             *  Black Box: Limited Visibility.
-                Implementation of classes:
-                we want to make classe hide form others/ user dor more appealing lookings.
-
-                C# Access Modifiers:
-                    1. Public
-                    2. Private        
-                    3. Protected
-                    4. internal
-                    5. protected inhernal.
-    
-            1. PUBLIC:
-                Accessible from everywhere
-	                CORRECET: Customer.CalculateRating.
-
-            2. PRIVATE: 
-	            Accessible only from the class
-	                ERROR: Customer.CalculateRating.
-            3. PROTECTED:
-	            Accessible only from the class and its derived classes.
-	                CORRECET: Customer.CalculateRating. 
-		                (This Breaks encapsulation)
-
-         ..............................Prefer to use PRIVATE insted of PROTECTED........................................
-
-            4. INTERNAL:  (Refferer with classes not with members)
-	            Accessible only from the same assembly.
-
-            5. PROTECTED INTERNAL: (Object)
-                Accessible Only from the same assemble or any derived classes.
-                        (This is hardly used in coding)
-            */
+             */
         }
-        public class Customer
+        //..............Class 1 Parent Class.....................
+        public class Vehicle
         {
-            public int Id { get; set; }
-            public string Name { get; set; }
+            private readonly string _registrationNumber;
 
-            public void Promote()
+            public Vehicle()
             {
-                var calculator = new RateCalculator();
-                var rating = calculator.Calculate(this);
-                Console.WriteLine("Logic Promotion");
+                Console.WriteLine("Vehicle is being initialized.");
             }
-            internal class RateCalculator
+
+            public Vehicle(string registrationNumber)
             {
-                public int Calculate(Customer customer)
-                {
-                    return 0;
-                }
+                _registrationNumber = registrationNumber;
+                Console.WriteLine("Vehicle Initialization {0}", _registrationNumber);
             }
         }
 
+
+        //..............Class 2 Child Class.....................
+        public class Car : Vehicle
+        {
+            public Car()
+            {
+                Console.WriteLine("Car Initialization.");
+            }
+
+            public Car(string registrationNumber)
+                : base(registrationNumber)
+            {
+                Console.WriteLine("Car Initialization{0}", registrationNumber);
+            }
         }
+    }
 }
 
 
