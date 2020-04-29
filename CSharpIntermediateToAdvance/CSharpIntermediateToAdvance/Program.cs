@@ -1,26 +1,56 @@
-﻿//using System;
+﻿using System;
 //using System.Runtime.CompilerServices;
-//using System.Collections.Generic;
-
-
+using System.Collections.Generic;
+using System.Net.Mail;
+using System.Text;
 
 namespace CSharpIntermediateToAdvance
 {
     partial class Program
     {
-        /*Lecture 36
-        Interfaces are NOT Multiple Inheritance
+        /*Lecture 37
+         * Interfaces and Polymorphism
 
-        interfaces can not be implemented multiple.mean this is just delared mutiple.
-        Interface are not used for implementing multiple inheritance.
-        Multiple ineritance we implement it physically many time,
-
-
-        Inheritance: gives ploymorphic behaviour
+           As software developer: reduce the impact of change.
+            OCP: Open Close Principal.
+                OCP: Open for expension but close for modification
 
             */
+        var encoder = new VideoEncoder();
+        encoder.RegistrationNotificationChannel(new MailNotificationChannel());
+            //encoder.RegistrationNotificationChannel(new SmsNotificationChannel());
+            Encoder.Encode(new VideoEncoder());
+
             }
-            }
+
+    //Class 1
+
+    public interface INotificationChannel
+    {
+        void Send(Message message);
+    }
+
+    //Class 2
+    public class Mail
+    {
+
+    }
+
+    //Class 3
+    public class MailService
+    {
+        public void Send(Mail mail)
+        {
+            Console.WriteLine("SENDING THE EMAIL....");
+        }
+    }
+
+    //Class 4
+    public class Message
+    {
+        //Implementation
+    }
+}
 
 
 
