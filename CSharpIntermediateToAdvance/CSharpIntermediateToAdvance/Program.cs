@@ -8,8 +8,8 @@ namespace CSharpIntermediateToAdvance
 {
     partial class Program
     {
-        /*Completed Section 7 and 8
-         */
+        //Completed C# Intermediate Course
+         
     }
 }
 
