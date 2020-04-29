@@ -8,8 +8,7 @@ namespace CSharpIntermediateToAdvance
 {
     partial class Program
     {
-        /*Lecture 38 and 39
-         *Completed Summary and Exercise
+        /*Completed Section 7 and 8
          */
     }
 }
