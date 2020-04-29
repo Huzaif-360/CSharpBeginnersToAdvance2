@@ -13,25 +13,54 @@ namespace CSharpIntermediateToAdvance
              * //Section 5
             Polymorphism: Third  Pillar of OOP
 
-            Lecture 28
-                Method Overiding
-                    Modifying the implementation of an inherited method.
-                    (This implementation may not be applied to the derived class)
-
-                    Method Overloading Vs Method Overriding:
             
-                Overloading:
-	            Method with same name and differnt signatures
-                Overrding:
-	            Modifying the implementation of an inherited method.
+            //Lecture 29
+            Abstract Classes and Members
 
-                Base..........virtual (Keyword) 
-                drivedd..........override(keyword)
+            1. Abstract Modifiers:
+	            Indicates that a class or a member is missing implementation
+            
+            public astract class shape
+            {
+            public abstract void Draw();
+            }
+            public class Circle: Shape
+            {
+            public override void Draw()
+            {
+            }   
+            }
 
-                Poly in Greek means many more means of form.
-                    Polymorphism means many forms.
-                We have the concept of shape and the concept of drawing a shape.
-                But that concept can have different forms depending on the objects we have and run time. All this done in polymorphism.
+
+            2. Abstract Member:
+	        Rules:	
+	            1.Do not have any body,( implementation).
+		        public abstract void Draw();
+	
+	            2. If a member is declared as abstract, the containing class need to be declared as abstract too.
+	            public astract class shape
+	            {
+	            public abstract void Draw();
+	            }
+		
+	            3. In a derived class you must implement all abstract members in the base abstract class.
+	            public class Circle: Shape
+	            {
+	            public override void Draw()
+	            {
+	            }
+	            }
+	
+	            4. Abstract classes can not be instaniated
+	            var shape=new Shaoe(); //this won't compile
+
+                3. Why to use Abstract?
+	            when you want to provide some common behavior while forcing other
+                developers to follow your design.
+                in our shaping example are declaring the draw method as abstract. We'll make sure that anytime a developer derives a class from the shape 
+                they will provide an implementation for the draw method. If we did not declare this method as abstract and instead provided an empty virtual method 
+                we would run into the risk of a developer deriving a class from the shape without overriding the draw method.
+
 
                     */
 
@@ -42,30 +71,19 @@ namespace CSharpIntermediateToAdvance
             shapes.Add(new Circle());
 
             //Creating a Rectangle
-            shapes.Add(new Rectangle());
+            //shapes.Add(new Rectangle());
 
             //Creating a Triangle
-            shapes.Add(new Triangle());
+            //shapes.Add(new Triangle());
 
-            var canvas = new Canvas();
-            canvas.DrawShapes(shapes);
-
-
+           // var canvas = new Canvas();
+            //anvas.DrawShapes(shapes);
         }
 
         //Parent Class
-        public class Shape
+        public abstract class Shape
         {
-            public int Width { get; set; }
-            public int Height { get; set; }
-
-
-
-            //Use of Virtual keywork ............Base Method
-            public virtual void Draw()
-            {
-                //code
-            }
+            public abstract void Draw();
         }
 
         //Derived Class 1
@@ -76,37 +94,7 @@ namespace CSharpIntermediateToAdvance
                 Console.WriteLine("Draw a Circle1.");
             }
         }
-
-        //Derived Class 2
-        public class Rectangle : Shape
-        {
-            public override void Draw()
-            {
-                Console.WriteLine("Draw a Rectangle2.");
-            }
-        }
-
-        //Derived Class 3
-        public class Triangle : Shape
-        {
-            public override void Draw()
-            {
-                Console.WriteLine("Draw a Triangle3.");
-            }
-        }
-
-
-        public class Canvas
-        {
-            public void DrawShapes(List<Shape> shapes)
-            {
-                foreach (var shape in shapes)
-                {
-                    shape.Draw();
-                }
-            }
-        }
-	}
+    }
 }
 
 
