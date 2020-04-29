@@ -1,89 +1,92 @@
-﻿//using System;
+﻿using System;
 //using System.Runtime.CompilerServices;
 //using System.Collections.Generic;
 
-using System;
+using System.IO;
 
 namespace CSharpIntermediateToAdvance
 {
-    class Program
+    partial class Program
     {
+        public interface ILogger
+        {
+            void LogError(string message);
+            void LogInfo(string message);
+        }
 
         static void Main(string[] args)
         {
             /* 
              * ///Section 6
                 Interfaces
-                Lecture 33
-               Interface and Testibility
+                Lecture 35
+               Interface and Extensibility
 */
             //creating a new orderprocessor object
-            var orderProcessor = new OrderProcessor(new ShippingCalculorcs());
-
-            //creating a new order
-            var order = new Order { DatePlaced = DateTime.Now, TotalPrice = 100f };
-            orderProcessor.Process(order);
         }
+        //........................................................
 
-
-        public class Shipment
+        public class DbMigrator
         {
-            public float Cost { get; set; }
-            public DateTime ShippingDate { get; set; }
-        }
-    }
-        //..........................................................................
+            private readonly ILogger _logger;
 
-//        using CSharpIntermediateToAdvance;
+            public DbMigrator(ILogger logger) => _logger = logger;
 
-//namespace CSharpIntermediate
-  //  {
-        public interface IShippingCalculatcr
-        {
-            float CalculateShipping(Order order);
-        }
-        public class ShippingCalculator : IShippingCalculatcr
-        {
-            public float CalculateShipping(Order order)
+            public void Migrator()
             {
-                if (order.TotalPrice < 30f)
+                object p = _logger.LogInfo("Migrating started at " + DateTime.Now);
+
+                //Details of migrating the database
+
+                _logger.LogInfo("Migrating finished at " + DateTime.Now);
+            }
+        }
+
+
+        //........................................................
+        public class FileLogger : ILogger
+        {
+            private readonly string _path;
+
+            public FileLogger(string path)
+            {
+                _path = path;
+            }
+            public void LogError(string message)
+            {
+                Log(message, "it is error ");
+            }
+
+            public void LogInfo(string message)
+            {
+                Log(message, "this is info message");
+            }
+
+            private void Log(string message, string messageType)
+            {
+                using (var streamWriter = new StreamWriter(_path, true))
                 {
-                    return order.TotalPrice * 0.1f;
+                    streamWriter.WriteLine(messageType + ": " + message);
                 }
-
-                return 0;
             }
         }
-    //}
+        //........................................................
 
-
-
-    //..........................................................................
-    /*using System;
-using System.Collections.Generic;
-using System.Text;
-*/
-
-    namespace CSharpIntermediateToAdvance
-    {
-        class OrderProcessor
+        public class ConsoleLogger : ILogger
         {
-            private ShippingCalculorcs shippingCalculorcs;
-
-            public OrderProcessor(ShippingCalculorcs shippingCalculorcs)
+            public void LogError(string message)
             {
-                this.shippingCalculorcs = shippingCalculorcs;
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine(message);
             }
 
-            internal void Process(Order order)
+            public void LogInfo(string message)
             {
-                throw new NotImplementedException();
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine(message);
             }
         }
     }
-
-
-
 }
 
 
