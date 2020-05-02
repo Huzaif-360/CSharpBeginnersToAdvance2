@@ -1,0 +1,13 @@
+C:\Users\Saifia computers\source\repos\CSharpBeginnersToAdvance2\CSharpAdvanceCourse\CSharpAdvanceCourse\obj\Debug\netcoreapp3.1\CSharpAdvanceCourse.csprojAssemblyReference.cache
+C:\Users\Saifia computers\source\repos\CSharpBeginnersToAdvance2\CSharpAdvanceCourse\CSharpAdvanceCourse\obj\Debug\netcoreapp3.1\CSharpAdvanceCourse.csproj.CoreCompileInputs.cache
+C:\Users\Saifia computers\source\repos\CSharpBeginnersToAdvance2\CSharpAdvanceCourse\CSharpAdvanceCourse\obj\Debug\netcoreapp3.1\CSharpAdvanceCourse.AssemblyInfoInputs.cache
+C:\Users\Saifia computers\source\repos\CSharpBeginnersToAdvance2\CSharpAdvanceCourse\CSharpAdvanceCourse\obj\Debug\netcoreapp3.1\CSharpAdvanceCourse.AssemblyInfo.cs
+C:\Users\Saifia computers\source\repos\CSharpBeginnersToAdvance2\CSharpAdvanceCourse\CSharpAdvanceCourse\bin\Debug\netcoreapp3.1\CSharpAdvanceCourse.exe
+C:\Users\Saifia computers\source\repos\CSharpBeginnersToAdvance2\CSharpAdvanceCourse\CSharpAdvanceCourse\bin\Debug\netcoreapp3.1\CSharpAdvanceCourse.deps.json
+C:\Users\Saifia computers\source\repos\CSharpBeginnersToAdvance2\CSharpAdvanceCourse\CSharpAdvanceCourse\bin\Debug\netcoreapp3.1\CSharpAdvanceCourse.runtimeconfig.json
+C:\Users\Saifia computers\source\repos\CSharpBeginnersToAdvance2\CSharpAdvanceCourse\CSharpAdvanceCourse\bin\Debug\netcoreapp3.1\CSharpAdvanceCourse.runtimeconfig.dev.json
+C:\Users\Saifia computers\source\repos\CSharpBeginnersToAdvance2\CSharpAdvanceCourse\CSharpAdvanceCourse\bin\Debug\netcoreapp3.1\CSharpAdvanceCourse.dll
+C:\Users\Saifia computers\source\repos\CSharpBeginnersToAdvance2\CSharpAdvanceCourse\CSharpAdvanceCourse\bin\Debug\netcoreapp3.1\CSharpAdvanceCourse.pdb
+C:\Users\Saifia computers\source\repos\CSharpBeginnersToAdvance2\CSharpAdvanceCourse\CSharpAdvanceCourse\obj\Debug\netcoreapp3.1\CSharpAdvanceCourse.dll
+C:\Users\Saifia computers\source\repos\CSharpBeginnersToAdvance2\CSharpAdvanceCourse\CSharpAdvanceCourse\obj\Debug\netcoreapp3.1\CSharpAdvanceCourse.pdb
+C:\Users\Saifia computers\source\repos\CSharpBeginnersToAdvance2\CSharpAdvanceCourse\CSharpAdvanceCourse\obj\Debug\netcoreapp3.1\CSharpAdvanceCourse.genruntimeconfig.cache
