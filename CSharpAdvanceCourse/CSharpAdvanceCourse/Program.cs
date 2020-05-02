@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace CSharpAdvanceCourse
 {
@@ -34,19 +35,63 @@ namespace CSharpAdvanceCourse
             //Square
             //num => num * num;
 
+            /*If we don't pass arguments:
+             *  LE ........... ()=>...
+             *  
+             * ...............................................
+             * if we have 1 ar..gument:
+             * x=> .................
+             * 
+             * * .................................................
+             * if we have many args:
+             * (x,y,z)=>.............
+             */
 
-            //Console.WriteLine(num(5));
-
-
+            /*const int factor = 5;
+            Func<int, int> multiplier = n => n * factor;
+            Console.WriteLine(multiplier(10));
             Func<int, int> square = num => num * num;
             Console.WriteLine(square(5));
-                    
-            //Console.WriteLine(value: Square(5));
-            //Console.WriteLine(square(5));
+            */
+            var books = new BookRepo().GetBooks();
+
+
+
+            //books.FindAll. this is Predicate Method.
+
+            //Normal Call
+            var cheapbook = books.FindAll(IsCheaper);
+
+            foreach(var book in cheapbook)
+            {
+                Console.WriteLine(book.title);
+
+            }
+            
+            
+            
+            
+            
+
         }
-        //public int square(int num)
-        //{
-        //    return num * num;
-        //}
+        //Predicate Method
+        static bool IsCheaper(Book book)
+        {
+            return book.Price < 10;
+        }
+
+        public class BookRepo
+        {
+            public List<Book> GetBooks()
+            {
+                return new List<Book>
+                {
+                    new Book{ title = "Title 1", Price =7},
+                    new Book{ title = "Title 1", Price =11},
+                    new Book{ title = "Title 1", Price =71}
+                };
+            }
+        }
     }
 }
+
