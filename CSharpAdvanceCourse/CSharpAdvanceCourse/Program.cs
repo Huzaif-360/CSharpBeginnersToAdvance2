@@ -3,6 +3,25 @@
 namespace CSharpAdvanceCourse
 {
 
+    public class DiscountCalc <TProduct> where TProduct: Product
+    {
+        public float CalcuteDiscount (TProduct product)
+        {
+            Console.WriteLine(   product.Price);
+            Console.WriteLine(   product.Title);
+
+        }
+    }
+    public class Product
+    {
+        public string Title { get; set; }
+        public float Price { get; set; }
+    }
+
+    public class Book : Product
+    {
+        public string isbn { get; set; }
+    }
 
 
     /*Constrains;
@@ -56,7 +75,7 @@ namespace CSharpAdvanceCourse
             //Generics
 
 
-            var Book = new Book { Items - "1111", Title - "Hello to Computing" };
+            var Book = new Book { isbn ,"1111", Title, "Hello to Computing" };
 
 
 
