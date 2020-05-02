@@ -3,153 +3,51 @@
 namespace CSharpAdvanceCourse
 {
 
-    public class DiscountCalc <TProduct> where TProduct: Product
-    {
-        public float CalcuteDiscount (TProduct product)
-        {
-            Console.WriteLine(   product.Price);
-            Console.WriteLine(   product.Title);
-
-        }
-    }
-    public class Product
-    {
-        public string Title { get; set; }
-        public float Price { get; set; }
-    }
-
-    public class Book : Product
-    {
-        public string isbn { get; set; }
-    }
-
-
-    /*Constrains;
-     *  where T: IComparable
-     *  where T: Product
-     *  where T: struct
-     *  where T: class
-     *  where T : new()
+    //Lecture 8 
+    /* Delegates
+     * An object that knows how to call a method  or group of methods.
+     * it is a reference to a function
+     * 
+     * This is used  to make the design of an applcation ( i.e. Frameworks) extensible and flexible.
+     * Used in designing frameworks
      */
-    //We can make this class generic 
-    // public class utilities<T> where T: IComparable
-    public class utilities
+
+
+
+
+        //This code is ok but not good for designing a mega framework. because even to deploy a new change we have to recomile the entir program and rerun it. this is bad this
+        //BCOZ according to role, our new change must not change other things.
+
+    class program
     {
 
-        //correct
-        public int Mac( int a , int b)
-        {
-            return a > b ? a : b;
-        }
-
-
-        //Error, because comlier are treated as objects so error. 
-        //public T Max<T>(T a, T b)
-        //{
-        //    return a > b ? a : b;
-        //}
-
-
-            //Right way............Generic Method in non generic class
-        public T Max<T>(T a, T b) where T: IComparable
-        {
-            return a.CompareTo(b) >0? a : b;
-        }
 
     }
 
 
-
-
-
-    //.............................
-    class Program
+    public class PhotoProcessor
     {
-        public static string Items { get; private set; }
-        public static string Title { get; private set; }
-
-        static void Main(string[] args)
+        public void Process(string path)
         {
-            //Section 2
-            // Lecture 7
-            //Generics
-
-
-            var Book = new Book { isbn ,"1111", Title, "Hello to Computing" };
-
-
-
-            //Generic increase the code resubility.
-            // it helps us get rid of all repeatitive lists calls 
-            var number = new GenericList<int>();
-            number.Add(10);
-            var books = new GenericList<>();
-            books.Add(new Book());
-
-
-            var dictionary = new GenericDictionary<string, Book>
-                dictionary.Add("1234", new Book());
-            //System.Collections.Generic.
-
+            var photo = new Photo.Load(path);
+            var filter = new Photofilter();
+            filter.ApplyBrightness(photo);
+           // filter.ApplyContrast(photo);
+            //filter.Resize(photo);
+            photo.save();
         }
-    }
-
-    public class BookList
-    {
-        public void Add(Book book)
-        {
-            throw new NotImplementedException();
-        }
-        public Book this[int index]
-        {
-            get
-            {
-                throw new NotImplementedException();
-            }
-        }
-    }
-
-    //Not useful
-    //public class ObjectList
-    //{
-    //    public void Add(object list)
-    //    {
-
-    //    }
-    //    public object this[int index]
-    //    {
-    //        get
-    //        {
-    //            throw new NotImplementedException();
-    //        }
-    //    }
-
-
-
-
-    public class GenericDictionary<Tkey, TValue>
-        {
-        public void Add(Tkey key, TValue value)
-        {
-
-        }
-        }
-
-       
-
-public class GenericList<T>
-{
-    public void Add( T value)
-        {
-
-        }
-    public T this[int index]
-    {
-        get
-        {
-            throw new NotImplementedException();
-        }
-    }
-}
 }
 
+    //photofilter
+    public class Photofilter
+    {
+        public void ApplyBrightness(Photo photo)
+        {
+            Console.WriteLine("Apply Brightness");
+        }
+    }
+    public class Photo
+    {
+
+    }
+}
