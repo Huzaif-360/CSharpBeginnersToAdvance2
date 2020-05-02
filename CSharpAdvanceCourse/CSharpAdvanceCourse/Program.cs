@@ -2,6 +2,48 @@
 
 namespace CSharpAdvanceCourse
 {
+
+
+
+    /*Constrains;
+     *  where T: IComparable
+     *  where T: Product
+     *  where T: struct
+     *  where T: class
+     *  where T : new()
+     */
+    //We can make this class generic 
+    // public class utilities<T> where T: IComparable
+    public class utilities
+    {
+
+        //correct
+        public int Mac( int a , int b)
+        {
+            return a > b ? a : b;
+        }
+
+
+        //Error, because comlier are treated as objects so error. 
+        //public T Max<T>(T a, T b)
+        //{
+        //    return a > b ? a : b;
+        //}
+
+
+            //Right way............Generic Method in non generic class
+        public T Max<T>(T a, T b) where T: IComparable
+        {
+            return a.CompareTo(b) >0? a : b;
+        }
+
+    }
+
+
+
+
+
+    //.............................
     class Program
     {
         public static string Items { get; private set; }
