@@ -25,6 +25,9 @@ namespace CSharpAdvanceCourse
             var books = new GenericList<>();
             books.Add(new Book());
 
+
+            var dictionary = new GenericDictionary<string, Book>
+                dictionary.Add("1234", new Book());
             //System.Collections.Generic.
 
         }
@@ -62,6 +65,16 @@ namespace CSharpAdvanceCourse
 
 
 
+
+    public class GenericDictionary<Tkey, TValue>
+        {
+        public void Add(Tkey key, TValue value)
+        {
+
+        }
+        }
+
+       
 
 public class GenericList<T>
 {
