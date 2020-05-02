@@ -60,7 +60,7 @@ namespace CSharpAdvanceCourse
             //books.FindAll. this is Predicate Method.
 
             //Normal Call
-            var cheapbook = books.FindAll(IsCheaper);
+            var cheapbook = books.FindAll(book => book.Price>10);
 
             foreach(var book in cheapbook)
             {
@@ -74,11 +74,11 @@ namespace CSharpAdvanceCourse
             
 
         }
-        //Predicate Method
+        /*Predicate Method
         static bool IsCheaper(Book book)
         {
             return book.Price < 10;
-        }
+        }*/
 
         public class BookRepo
         {
@@ -87,8 +87,8 @@ namespace CSharpAdvanceCourse
                 return new List<Book>
                 {
                     new Book{ title = "Title 1", Price =7},
-                    new Book{ title = "Title 1", Price =11},
-                    new Book{ title = "Title 1", Price =71}
+                    new Book{ title = "Title 2", Price =11},
+                    new Book{ title = "Title 3", Price =71}
                 };
             }
         }
