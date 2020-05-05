@@ -24,25 +24,29 @@ namespace CSharpAdvanceCourse
             Customers.Birthday(datetime NULL)
             */
 
+            //if (date != null)
+            //    date2 = date.GetValueOrDefault();
+            //else
+            //    date2 = DateTime.Today;
+            //var d3 = DateTime.Now;
+            //Console.WriteLine(date);
+            //Console.WriteLine(date2);
+            //Console.WriteLine(d3);
 
-            //DateTime date = null; Error bcoz datetime is not nullable
-            //we can make DateTime a nullable by using as following:
+            //We can make code smallers by using null colsealing operator;
+            DateTime? date = null;
+            DateTime date2 = date ?? DateTime.Today;
+            
+            //Also we can use tertiart operators
+            DateTime date3 = (date != null) ? date.GetValueOrDefault() : DateTime.Today;
 
-            //Nullable<DateTime> date = null;    //No Error
-            ////Aslo we can write a nullable as:
-            //DateTime? date1 = null;
-            //int? num = null;
+            Console.WriteLine(date2);
 
 
 
-            //Console.WriteLine(date.GetValueOrDefault());
-            //Console.WriteLine(date.HasValue);
-            //Console.WriteLine(date.Value);
 
-            DateTime? date = new DateTime(2020, 1, 1);
-            DateTime Date2 = date.GetValueOrDefault();
-            DateTime? date3 = Date2;
-            Console.WriteLine(date3.GetValueOrDefault());
+
+
 
 
 
