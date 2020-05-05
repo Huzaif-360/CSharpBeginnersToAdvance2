@@ -1,6 +1,7 @@
 ﻿//using System;
 //using System.Collections.Generic;
 //using System.Threading;
+using System.Linq;
 
 namespace CSharpAdvanceCourse
 {
@@ -23,8 +24,22 @@ namespace CSharpAdvanceCourse
              *  XML (LINQ to XML)
              *  ADO.NET Data Sets (LINQ to Data Sets)
              */
-          
+
+            //LINQ Helps in reducing the lines of code.
+
+            //LINQ usage
+            var cheapbook = books.Where(b => b.Price < 10);
+            /*
+             * LINQ Methods:
+             * Where(............Use Lambda Expression..........)
+             * Orderby(............Use Lambda Expression..........)
+             * Single.(...........)  .........Single only works where the object must exists.
+             * if we are not sure that we must use SigleorDefault()
+             */
+
+
         }
     }
+    //public class 
 
 }
