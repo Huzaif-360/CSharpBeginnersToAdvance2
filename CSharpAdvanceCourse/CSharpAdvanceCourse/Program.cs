@@ -33,11 +33,9 @@ namespace CSharpAdvanceCourse
              *      COM( e.g. writing office applications)
              *      Dynamic languages( Iron Python)
              */
-            dynamic a = 10;
-            dynamic b = 12;
-            var c = a + b;  //Now var has decided itself the c would be a dynamic variable
-            Console.WriteLine(c);
-
+            int i = 19;
+            dynamic d = i;      //at last d would be equal to integer not dynamic
+            Console.WriteLine(d);
 
 
 
