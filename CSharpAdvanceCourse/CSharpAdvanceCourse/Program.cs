@@ -1,4 +1,4 @@
-﻿using System;
+﻿//using System;
 //using System.Collections.Generic;
 //using System.Threading;
 
@@ -10,16 +10,20 @@ namespace CSharpAdvanceCourse
         static void Main(string[] args)
         {
             /*
-             * Lecture 10
-             * Extension Methods
-             *      Allow us to add methods to an existing class with:
-             *         1. Changing the code
-             *         2. creating a new class that inherits from it
-             *         
+             * Lecture 11
+             * LINQ
+             *  Language Integrated Query
+             *  LINQ gives the capability to query objects
+             *  
+             *  
+             *  
+             *  You can query:
+             *  Object in memory, eg collections (LINQ to Objects)
+             *  Databases (LINQ to Entities)
+             *  XML (LINQ to XML)
+             *  ADO.NET Data Sets (LINQ to Data Sets)
              */
-            string post = "This is very very lpong pistdnjk hkjsjk";
-            var shortmessage = post.Shorten(5);
-            Console.WriteLine(shortmessage);
+          
         }
     }
 
