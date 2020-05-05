@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading;
 
 namespace CSharpAdvanceCourse
 {
@@ -31,8 +32,73 @@ namespace CSharpAdvanceCourse
              *      how that method knows what to call??
              *            This is done by using delegate.
              *      
-            */ 
+            */
+
+            var video = new Video() { title = "Video 1" };
+            var videoEncoder = new videoEncoder();//publisher
+            var mailservice = new MailService();// Subscriber
+            videoEncoder.VideoEncoded += mailservice.OnVideoEncoded;
+            videoEncoder.Encode(vidoe);
+
+
+
+        }
+
+    }
+
+    public class MialService
+    {
+        public void OnVideoEncoded(object soure, EventArgs e)
+        {
+            Console.WriteLine("Mail Server sendig and email");
         }
     }
+
+    public class videoEncoder
+    {
+        //1. Define a delegate
+        //2. Define an event based on that delegate
+        //3. Raise the event
+
+
+
+
+
+            //...................1..................
+        //If name of the function is VideoEncoder then the name of delegate shoudl be added and EvenHandler.
+        // and total name of the delegate function would become as:
+        //VideoEncoderEventHandler
+        public delegate void VideoEncoderEvenHandler(object source, EventArgs arg);
+
+
+        //........................ 2..................
+        public event VideoEncoderEvenHandler VideoEncoded;
+
+
+        //.................3........................
+
+
+
+        public void Encode(Video video)
+        {
+            Console.WriteLine("Encoding Video...");
+            Thread.Sleep(1000);
+            ONVideoEncoder();
+            }
+
+
+        //Event publisher method should be :
+        //1. Protected
+        //2. Virtual
+        //3. Void
+        // name of the method should be On + name of the event
+        // mean total = ONVVideoEncoder
+        protected virtual void ONVideoEncoder()
+        {
+            if (VideoEncoded != null)
+                VideoEncoded(this, EventArgs.Empty);
+        }
+            }
+
 }
 
