@@ -13,8 +13,8 @@ namespace CSharpAdvanceCourse
         static void Main(string[] args)
         {
             /*
-             * Completed Quiz 2 
-             * Advance Course
+             *
+             * Completed Advance Course Section 2
              *
              */
         }
