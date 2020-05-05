@@ -13,34 +13,14 @@ namespace CSharpAdvanceCourse
         static void Main(string[] args)
         {
             /*
-             * Lecture 13
-             * Dynamic
-             * 
-             * Confusing but easy:
-             * 
-             * Types of Programming Languages:
-             * 
-             *  1. Statically-typed languages:.........................(resolution at compile time)
-             *      i.e. C#, JAVA etc
-             *      
-             *  2. Dynamically-typed languages:.........................(resolution at run time)
-             *      i.e. Ruby, Javascript, Python
-             * 
-             * 
-             * C# HISTORY:
-             *  It is started as a static language
-             *  .NET 4 added the dynamic capability to improve interoperability with:
-             *      COM( e.g. writing office applications)
-             *      Dynamic languages( Iron Python)
+             * Lecture 14
+             * Exceptional Handling
+             *
              */
-            int i = 19;
-            dynamic d = i;      //at last d would be equal to integer not dynamic
-            Console.WriteLine(d);
-
-
+            var calclulator = new Calculator();
+            var result = calclulator.Divide(4, 2);
+            Console.WriteLine(result);
 
         }
     }
-    
-
 }
