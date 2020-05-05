@@ -13,34 +13,26 @@ namespace CSharpAdvanceCourse
         static void Main(string[] args)
         {
             /*
-             * Lecture 12
-             * Nullable Types
+             * Lecture 13
+             * Dynamic
              * 
-             * We Know:
-             * A value type can never have NULL
-             * i.e. Bool hasAssess= true; or false 
-            bool hasAssess = true; //or false
-            DataBase :
-            Customers.Birthday(datetime NULL)
-            */
-
-            //if (date != null)
-            //    date2 = date.GetValueOrDefault();
-            //else
-            //    date2 = DateTime.Today;
-            //var d3 = DateTime.Now;
-            //Console.WriteLine(date);
-            //Console.WriteLine(date2);
-            //Console.WriteLine(d3);
-
-            //We can make code smallers by using null colsealing operator;
-            DateTime? date = null;
-            DateTime date2 = date ?? DateTime.Today;
-            
-            //Also we can use tertiart operators
-            DateTime date3 = (date != null) ? date.GetValueOrDefault() : DateTime.Today;
-
-            Console.WriteLine(date2);
+             * Confusing but easy:
+             * 
+             * Types of Programming Languages:
+             * 
+             *  1. Statically-typed languages:.........................(resolution at compile time)
+             *      i.e. C#, JAVA etc
+             *      
+             *  2. Dynamically-typed languages:.........................(resolution at run time)
+             *      i.e. Ruby, Javascript, Python
+             * 
+             * 
+             * C# HISTORY:
+             *  It is started as a static language
+             *  .NET 4 added the dynamic capability to improve interoperability with:
+             *      COM( e.g. writing office applications)
+             *      Dynamic languages( Iron Python)
+             */
 
 
 
