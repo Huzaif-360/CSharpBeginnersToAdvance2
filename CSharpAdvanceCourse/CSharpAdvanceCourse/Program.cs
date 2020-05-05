@@ -34,11 +34,22 @@ namespace CSharpAdvanceCourse
              *      Dynamic languages( Iron Python)
              */
 
+            //object obj = "huzafia";
+            //obj.
 
 
 
+            
+            
+            //dynamic has no problem with code because it sees these things at runtime 
 
+            dynamic name = "Huzaifa";   //here name is string
+                name = 1001;            //here name is int..............this is beauty of dynamic 
+            Console.WriteLine(name);
 
+            //Error with static code
+            //static name= "Huzaifa";
+            //name = 1001;
 
 
 
