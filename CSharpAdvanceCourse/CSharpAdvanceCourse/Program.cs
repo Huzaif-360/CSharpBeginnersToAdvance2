@@ -17,7 +17,10 @@ namespace CSharpAdvanceCourse
              *         2. creating a new class that inherits from it
              *         
              */
-            Console.WriteLine();
+            string post = "This is very very lpong pistdnjk hkjsjk";
+            var shortmessage = post.Shorten(5);
+            Console.WriteLine(shortmessage);
         }
     }
+
 }
